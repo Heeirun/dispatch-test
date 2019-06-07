@@ -21,6 +21,7 @@
         "botbuilder-azure": "~4.4.0",
         "botbuilder-dialogs": "~4.4.0",
         "dotenv": "^6.1.0",
+        "nodemailer": "^6.2.1",
         "restify": "^7.2.3"
     },
     "devDependencies": {

@@ -3,6 +3,7 @@
 
 const { ActivityHandler } = require('botbuilder');
 const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
+const nodemailer = require("nodemailer");
 
 class DispatchBot extends ActivityHandler {
     /**
@@ -39,10 +40,8 @@ class DispatchBot extends ActivityHandler {
 
             // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
             const recognizerResult = await dispatchRecognizer.recognize(context);
-            this.logger.log("Cognitive Service: " + recognizerResult);
             // Top intent tell us which cognitive service to use.
             const intent = LuisRecognizer.topIntent(recognizerResult);
-            this.logger.log("Top Intent: " + recognizerResult);
             // Next, we call the dispatcher with the top intent.
             await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
 
@@ -86,7 +85,7 @@ class DispatchBot extends ActivityHandler {
         // Retrieve LUIS result for Process Automation.
         const result = luisResult.connectedServiceResult;
         const intent = result.topScoringIntent.intent;
-
+        this.sendTicket().catch(console.error);
         await context.sendActivity(`HomeAutomation top intent ${ intent }.`);
         await context.sendActivity(`HomeAutomation intents detected:  ${ luisResult.intents.map((intentObj) => intentObj.intent).join('\n\n') }.`);
 
@@ -94,6 +93,37 @@ class DispatchBot extends ActivityHandler {
             await context.sendActivity(`HomeAutomation entities were found in the message: ${ luisResult.entities.map((entityObj) => entityObj.entity).join('\n\n') }.`);
         }
     }
+
+    async sendTicket() {
+        let transporter = nodemailer.createTransport({
+            host: process.env.SMTPHost,
+            port: process.env.SMTPPort,
+            secure: false,
+            auth: {
+                user: process.env.SMTPUser,
+                pass: process.env.SMTPPass
+            }
+        });
+
+        let info = await transporter.sendMail({
+           from: '"IT Support Chat Bot" <hjayakumar@wisc.edu>',
+           to: "jayakumarh@schneider.com, jayakumar@schneider.com",
+           subject: "Password Reset",
+           text: "I am having issues reseting my password\nPriority: 5\nPrimary Application: N/A"
+        });
+
+        console.log("Message sent: %s", info.messageId)
+    }
+
+    // async processITSupport(context, luisResult) {
+    //     this.logger.log('processITSupport');
+
+    //     //Retrieve LUIS result from ITSupport
+    //     const result = luisResult.connectedServiceResult;
+    //     const intent = result.topScoringIntent.intent;
+
+    //     await context.sendActivity("ITSupport top intent")
+    // }
 
     async processSampleQnA(context) {
         this.logger.log('processSampleQnA');
