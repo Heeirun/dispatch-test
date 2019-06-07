@@ -1,0 +1,4 @@
+No	Intent	Utterance Count	Utterance Average Length	Utterance Maximum Length	Utterance Minimum Length	Utterance Length StdDev
+0	l_HomeAutomation	38	23.36842	41	8	6.51162
+1	q_sample-qna	6840	22.93465	81	1	9.03053
+ 	__ALL__	6878	22.93705	81	1	9.01826

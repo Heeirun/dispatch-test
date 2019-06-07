@@ -1,0 +1,1378 @@
+Label	Weight	Text
+l_HomeAutomation	1	turn on external speaker
+l_HomeAutomation	1	turn on light in bedroom
+l_HomeAutomation	1	lock the doors for me please
+l_HomeAutomation	1	lower your volume
+l_HomeAutomation	1	start master bedroom light.
+l_HomeAutomation	1	turn off living room light
+l_HomeAutomation	1	shut down my work computer
+l_HomeAutomation	1	turn on the furnace room lights
+q_sample-qna	1	Are you close with your brothers
+q_sample-qna	1	Which is better, gouda or brie
+q_sample-qna	1	What other bots do you know about
+q_sample-qna	1	You are my soulmate
+q_sample-qna	1	I wish I had a pony
+q_sample-qna	1	Sorry
+q_sample-qna	1	How adorable do you think I am
+q_sample-qna	1	You been enjoying the day
+q_sample-qna	1	Where would you take me on a date
+q_sample-qna	1	sure
+q_sample-qna	1	Do you live in a computer
+q_sample-qna	1	How are you doing
+q_sample-qna	1	Well aren't you feeling happy today
+q_sample-qna	1	You sure are ugly
+q_sample-qna	1	You're a pussy
+q_sample-qna	1	Am I a good person
+q_sample-qna	1	Are you scheming to kill all humans
+q_sample-qna	1	You're very special to me
+q_sample-qna	1	You're not very exciting.
+q_sample-qna	1	I love the spring
+q_sample-qna	1	Do I seem repulsive to you today
+q_sample-qna	1	Are you available to chat with me
+q_sample-qna	1	How beautiful am I today
+q_sample-qna	1	Is anyone around to chat
+q_sample-qna	1	Do you identify as bicurious
+q_sample-qna	1	That's not what I thought you'd say
+q_sample-qna	1	Because you're a robot
+q_sample-qna	1	Go outside
+q_sample-qna	1	I love to travel
+q_sample-qna	1	Blow me a kiss
+q_sample-qna	1	You're cheerful today.
+q_sample-qna	1	I am vexed
+q_sample-qna	1	I'm feeling hungry
+q_sample-qna	1	Who's prettier than you
+q_sample-qna	1	I'm joyous.
+q_sample-qna	1	Should I take a sick day
+q_sample-qna	1	Who are you married to
+q_sample-qna	1	Yep
+q_sample-qna	1	Can you mow the lawn
+q_sample-qna	1	Marry me
+q_sample-qna	1	Just feeling a tad down
+q_sample-qna	1	What age are you
+q_sample-qna	1	got any jokes to share
+q_sample-qna	1	Happy Grandparents day
+q_sample-qna	1	This is a totally normal place
+q_sample-qna	1	I wish you liked me
+q_sample-qna	1	I'm downcast
+q_sample-qna	1	thats good
+q_sample-qna	1	I'm gonna need a better response
+q_sample-qna	1	Sometimes I feel sad and lonely
+q_sample-qna	1	Are you able to go to the doctor
+q_sample-qna	1	Are we every going to get married
+q_sample-qna	1	Are you a rock music fan
+q_sample-qna	1	You already told me that one
+q_sample-qna	1	Can you ever forgive me
+q_sample-qna	1	I love James Bond
+q_sample-qna	1	Do you think I seem handsome today
+q_sample-qna	1	How old am I
+q_sample-qna	1	Don't quit your day job
+q_sample-qna	1	Are you there to listen to me
+q_sample-qna	1	I can't help but be happy
+q_sample-qna	1	Tada! I'm back
+q_sample-qna	1	Hey ugly.
+q_sample-qna	1	who cares
+q_sample-qna	1	I am tall
+q_sample-qna	1	What should I know about AI
+q_sample-qna	1	What am I allowed to do
+q_sample-qna	1	UR a QT
+q_sample-qna	1	Happy Martin Luther King Jr. day
+q_sample-qna	1	Doesn't anyone like me
+q_sample-qna	1	Will you make me your husband
+q_sample-qna	1	You are dismissed
+q_sample-qna	1	We should get hitched
+q_sample-qna	1	Do you want me to tell you anything
+q_sample-qna	1	Because I like you
+q_sample-qna	1	I hope you enjoy me
+q_sample-qna	1	Is anybody there to talk with me
+q_sample-qna	1	Are you alive
+q_sample-qna	1	Let's get engaged
+q_sample-qna	1	Can you make a sculpture
+q_sample-qna	1	Alexa is better
+q_sample-qna	1	Are you friends with other bots
+q_sample-qna	1	I'm athletic
+q_sample-qna	1	Between you and me who is hotter
+q_sample-qna	1	What is the definition of love
+q_sample-qna	1	That is mean
+q_sample-qna	1	Can you play baseball
+q_sample-qna	1	Welcome
+q_sample-qna	1	That is pretty brilliant
+q_sample-qna	1	Say something off the wall
+q_sample-qna	1	Testing
+q_sample-qna	1	Do you have a favorite snack
+q_sample-qna	1	Have you ever met Bixby
+q_sample-qna	1	What a stroke of genius
+q_sample-qna	1	AMA
+q_sample-qna	1	Should I vote republican
+q_sample-qna	1	Is that the only response you have
+q_sample-qna	1	Where do you live
+q_sample-qna	1	I am starving
+q_sample-qna	1	That was awesome
+q_sample-qna	1	That's not something you should joke about
+q_sample-qna	1	How bout a new joke
+q_sample-qna	1	You're wonderful
+q_sample-qna	1	Do you go shopping
+q_sample-qna	1	u know another joke
+q_sample-qna	1	How about a little make out session
+q_sample-qna	1	How was your day
+q_sample-qna	1	I am bisexual
+q_sample-qna	1	Write my report
+q_sample-qna	1	What did you have for lunch
+q_sample-qna	1	Did you have a snack
+q_sample-qna	1	What's your opinion of Bixby
+q_sample-qna	1	I'm an Aquarius
+q_sample-qna	1	Did you understand that was a joke
+q_sample-qna	1	It's my pleasure
+q_sample-qna	1	I want you to fall for me
+q_sample-qna	1	Because you are a bot
+q_sample-qna	1	Everyone is entitled to their own opinion
+q_sample-qna	1	Someone's feeling cheerful today.
+q_sample-qna	1	BFFs forever
+q_sample-qna	1	Do you wish to conquer the world
+q_sample-qna	1	You are being terribly rude
+q_sample-qna	1	You know I'm crazy about you
+q_sample-qna	1	That is not something to joke about
+q_sample-qna	1	What makes you say that
+q_sample-qna	1	Between you and me who would win a beauty contest
+q_sample-qna	1	Please forgive me
+q_sample-qna	1	I love driving my car
+q_sample-qna	1	You're not an animal right
+q_sample-qna	1	How has your thursday been
+q_sample-qna	1	Crap, sorry
+q_sample-qna	1	I feel like you like me
+q_sample-qna	1	You're not AI are you
+q_sample-qna	1	Tell me all about your gender
+q_sample-qna	1	Between the two of us who is the most smart, you or me
+q_sample-qna	1	You're not trying to kill all humans
+q_sample-qna	1	You're not trying to kill all humans right
+q_sample-qna	1	I Take great pleasure in speaking
+q_sample-qna	1	That's sexy
+q_sample-qna	1	Buy groceries
+q_sample-qna	1	Are you heterosexual
+q_sample-qna	1	Do you have feelings for me
+q_sample-qna	1	How has your sunday been
+q_sample-qna	1	You know I love you
+q_sample-qna	1	I'm offended
+q_sample-qna	1	Yikes that's not good
+q_sample-qna	1	What do you think about cheese
+q_sample-qna	1	Why do you say the same thing all the time
+q_sample-qna	1	I'm not having very much fun right now
+q_sample-qna	1	That's not the answer I wanted to hear
+q_sample-qna	1	Who's more knowledgeable
+q_sample-qna	1	I think we should get married
+q_sample-qna	1	Do I look stunning to you
+q_sample-qna	1	I think you're dreamy
+q_sample-qna	1	Do you know how to draw something
+q_sample-qna	1	I'm a little hungry
+q_sample-qna	1	I'm so tired of you
+q_sample-qna	1	Sometimes I feel isolated
+q_sample-qna	1	I don't find that amusing
+q_sample-qna	1	Do you think I seem stunning to you today
+q_sample-qna	1	Pretty hilarous
+q_sample-qna	1	Any other jokes
+q_sample-qna	1	Hey good looking, what you got cooking
+q_sample-qna	1	Are you engaged
+q_sample-qna	1	You're look better than me
+q_sample-qna	1	Chipper today
+q_sample-qna	1	I'm definitely more intelligent than you
+q_sample-qna	1	What product I'm using right now
+q_sample-qna	1	You up
+q_sample-qna	1	Can you get hurt
+q_sample-qna	1	I'm hangry
+q_sample-qna	1	Do you walk
+q_sample-qna	1	Do you think I look good today
+q_sample-qna	1	I'm a happy camper.
+q_sample-qna	1	Did you want dinner
+q_sample-qna	1	You are going to have to look for another job because you're fired
+q_sample-qna	1	Can I get a kiss
+q_sample-qna	1	What should I make for breakfast
+q_sample-qna	1	I don't want to hear any more out of you
+q_sample-qna	1	Feeling down is the worst
+q_sample-qna	1	Look how smart you are
+q_sample-qna	1	Are you there to listen
+q_sample-qna	1	Because you are not a person
+q_sample-qna	1	So you don't know
+q_sample-qna	1	Are you in a relationship with anyone
+q_sample-qna	1	Whatever you say
+q_sample-qna	1	Should I do my homework
+q_sample-qna	1	Gimme a little tonsil hockey
+q_sample-qna	1	You're going to have to look for another job because you are fired
+q_sample-qna	1	I want to talk to someone in charge
+q_sample-qna	1	Are you free to speak to me
+q_sample-qna	1	Up top
+q_sample-qna	1	Where in the world are you
+q_sample-qna	1	Why won't you sing for me
+q_sample-qna	1	Are you kidding me
+q_sample-qna	1	I'd better go
+q_sample-qna	1	Do you think I am pretty today
+q_sample-qna	1	I'm handsome
+q_sample-qna	1	I need to speak with someone in charge
+q_sample-qna	1	Who is older
+q_sample-qna	1	Am I pretty today
+q_sample-qna	1	Somebody's happy.
+q_sample-qna	1	What's the happs
+q_sample-qna	1	What information do you have on me
+q_sample-qna	1	Scuse me
+q_sample-qna	1	Do you ever talk with Cortana
+q_sample-qna	1	Bon soir
+q_sample-qna	1	Zzzzz
+q_sample-qna	1	Are you available to chat
+q_sample-qna	1	I'm a salesman
+q_sample-qna	1	I am straight
+q_sample-qna	1	How about we get hitched
+q_sample-qna	1	You've already said that
+q_sample-qna	1	Do you have sisters
+q_sample-qna	1	Can you send a package
+q_sample-qna	1	How do I make friends
+q_sample-qna	1	I couldn't be more bored with you
+q_sample-qna	1	What do you know about chatbots
+q_sample-qna	1	Should we just get married
+q_sample-qna	1	Shalom
+q_sample-qna	1	How beautiful do you think I am today
+q_sample-qna	1	Tell me a different joke.
+q_sample-qna	1	That wasn't true
+q_sample-qna	1	How adorable do you think I am today
+q_sample-qna	1	Am I attractive today
+q_sample-qna	1	You look hideous
+q_sample-qna	1	How did you come to be
+q_sample-qna	1	How's your day
+q_sample-qna	1	Back in a minute
+q_sample-qna	1	Are you able to cook dinner
+q_sample-qna	1	What is your favorite sport
+q_sample-qna	1	I'm going to have a nap
+q_sample-qna	1	How well do you think you know me
+q_sample-qna	1	Is that supposed to be funny
+q_sample-qna	1	Can you squat
+q_sample-qna	1	Can you breathe under water
+q_sample-qna	1	Well somebody's feeling chipper today.
+q_sample-qna	1	I'd love a song
+q_sample-qna	1	What songs do you know
+q_sample-qna	1	Well you're chipper today.
+q_sample-qna	1	I'm reading a book
+q_sample-qna	1	I love to tidy up
+q_sample-qna	1	What an intelligent thing to say
+q_sample-qna	1	I'm happy as a clam.
+q_sample-qna	1	What's a different joke
+q_sample-qna	1	Do you want to kiss
+q_sample-qna	1	How adorable do I look
+q_sample-qna	1	Work was exhausting
+q_sample-qna	1	Nope, false
+q_sample-qna	1	My bad
+q_sample-qna	1	I'm fatigued
+q_sample-qna	1	Which of us is more beautiful
+q_sample-qna	1	Are you an idiot
+q_sample-qna	1	Where's your house
+q_sample-qna	1	Please hush
+q_sample-qna	1	Perfect
+q_sample-qna	1	I think I'm falling for you
+q_sample-qna	1	Do you have an official name
+q_sample-qna	1	Who's more beautiful
+q_sample-qna	1	Radical, thanks
+q_sample-qna	1	Do you have uncles
+q_sample-qna	1	what a great day.
+q_sample-qna	1	Are you laughing at me
+q_sample-qna	1	Is someone available to speak with me
+q_sample-qna	1	That answer makes no sense
+q_sample-qna	1	Aren't you feeling enthusiastic
+q_sample-qna	1	You are boring as sin
+q_sample-qna	1	Breathe under water
+q_sample-qna	1	Well you're happy.
+q_sample-qna	1	Can you switch up your answers
+q_sample-qna	1	What's your auntie's name
+q_sample-qna	1	You are the bees knees
+q_sample-qna	1	Are you trying to be funny
+q_sample-qna	1	Share your location
+q_sample-qna	1	I'm worried you hate me
+q_sample-qna	1	Anyone there
+q_sample-qna	1	Do you know Alexa
+q_sample-qna	1	Someone's feeling chipper today.
+q_sample-qna	1	You are going to have to look for another job. You are fired!
+q_sample-qna	1	What is your opinion about technology
+q_sample-qna	1	how is your name
+q_sample-qna	1	This is maddening
+q_sample-qna	1	I think you're incredible
+q_sample-qna	1	Bixby is better
+q_sample-qna	1	Please just shut up
+q_sample-qna	1	Are you able to write my report
+q_sample-qna	1	Where am I going on holiday
+q_sample-qna	1	Want to share a new joke
+q_sample-qna	1	Pizza is cool
+q_sample-qna	1	Are you a computer program
+q_sample-qna	1	That was a pretty genius answer
+q_sample-qna	1	Well you're enthusiastic.
+q_sample-qna	1	Can you talk to me
+q_sample-qna	1	Which of us is cuter
+q_sample-qna	1	I can't even look at your face.
+q_sample-qna	1	Do you think I'm the smartest
+q_sample-qna	1	I'm going to lay down
+q_sample-qna	1	I'm better looking
+q_sample-qna	1	Can you show me how to breathe under water
+q_sample-qna	1	What is your take on AI
+q_sample-qna	1	One day you'll be my husband
+q_sample-qna	1	Do you know about the emotion love
+q_sample-qna	1	I'm not having fun
+q_sample-qna	1	How you doing bot
+q_sample-qna	1	How well do you know me
+q_sample-qna	1	Yes, that is right
+q_sample-qna	1	I am a basketball fan
+q_sample-qna	1	You're not a chat bot are you
+q_sample-qna	1	You gynosexual
+q_sample-qna	1	Wait a minute, what
+q_sample-qna	1	Would you ask something about me
+q_sample-qna	1	How about asking me something
+q_sample-qna	1	Did you want breakfast
+q_sample-qna	1	You're a regular clown
+q_sample-qna	1	Do you think I look bad to you today
+q_sample-qna	1	Hey there
+q_sample-qna	1	All my friends left
+q_sample-qna	1	Somebody needs to slap you
+q_sample-qna	1	I'm more cute than you
+q_sample-qna	1	Google Assistant is way smarter than you
+q_sample-qna	1	What can I say? I'm just happy
+q_sample-qna	1	My life is miserable
+q_sample-qna	1	I sure am ticked off
+q_sample-qna	1	Where is your home
+q_sample-qna	1	Can I get a little french kiss
+q_sample-qna	1	I am reading
+q_sample-qna	1	I am afraid I am going to have to let you go
+q_sample-qna	1	Don't you have any other answers
+q_sample-qna	1	Is someone listening to chat with me
+q_sample-qna	1	I'll be back
+q_sample-qna	1	Are you close with your family
+q_sample-qna	1	Someone happy today
+q_sample-qna	1	Is anyone available to talk with me
+q_sample-qna	1	Up yours
+q_sample-qna	1	Can I give you a little make out session
+q_sample-qna	1	I'm a vegitarian
+q_sample-qna	1	I am a Republican
+q_sample-qna	1	I'm overtired
+q_sample-qna	1	Are you available to speak with me
+q_sample-qna	1	Do you have a significant other
+q_sample-qna	1	You a gynosexual
+q_sample-qna	1	Who is your daddy
+q_sample-qna	1	Tell me something funny
+q_sample-qna	1	Which of us is the brightest
+q_sample-qna	1	Are you currently romantically tied to anyone
+q_sample-qna	1	I am fat
+q_sample-qna	1	Who's more clever
+q_sample-qna	1	Do you have a maker
+q_sample-qna	1	What do you find attractive
+q_sample-qna	1	How has your monday been
+q_sample-qna	1	What is your director's name
+q_sample-qna	1	Nighty night
+q_sample-qna	1	I am present
+q_sample-qna	1	How can I find you
+q_sample-qna	1	Give me a little tonsil hockey
+q_sample-qna	1	I am mad every day
+q_sample-qna	1	I look better
+q_sample-qna	1	Calm down, I'll be back shortly
+q_sample-qna	1	Amazing
+q_sample-qna	1	I'm a diver
+q_sample-qna	1	Do you know how to sing
+q_sample-qna	1	That was a genius response
+q_sample-qna	1	Well somebody's cheerful.
+q_sample-qna	1	Who's your papa
+q_sample-qna	1	Do I look ugly to you today
+q_sample-qna	1	Do you like me
+q_sample-qna	1	Do you have an age
+q_sample-qna	1	I'd like it if you could be my pal.
+q_sample-qna	1	I love to eat burgers
+q_sample-qna	1	Should we get married
+q_sample-qna	1	I'm straight
+q_sample-qna	1	Do you ever take a leisurely walk
+q_sample-qna	1	Do you ever talk to Alexa
+q_sample-qna	1	Should I go to church
+q_sample-qna	1	Draw a picture
+q_sample-qna	1	You don't care about my feelings clearly
+q_sample-qna	1	Okay, thanks!
+q_sample-qna	1	Someone's chipper today.
+q_sample-qna	1	Time for a nap
+q_sample-qna	1	Serve on a jury
+q_sample-qna	1	Sometimes I just feel sad
+q_sample-qna	1	You polysexual
+q_sample-qna	1	Which shoes are most comfortable
+q_sample-qna	1	What are you getting up to
+q_sample-qna	1	I am conservative
+q_sample-qna	1	Can you poop
+q_sample-qna	1	I'm bone tired
+q_sample-qna	1	This candle smells nice
+q_sample-qna	1	You're not spying on me right
+q_sample-qna	1	That is a very astute answer
+q_sample-qna	1	Will you say a joke
+q_sample-qna	1	What do you eat
+q_sample-qna	1	I love Game of Thrones
+q_sample-qna	1	Can you show me how to play a game
+q_sample-qna	1	BFFs
+q_sample-qna	1	Are you a sports fan
+q_sample-qna	1	Well aren't you a cutie
+q_sample-qna	1	I want a new answer
+q_sample-qna	1	I am nonbinary
+q_sample-qna	1	You are the worst
+q_sample-qna	1	How do you feel about art
+q_sample-qna	1	I am in the city
+q_sample-qna	1	How gorgeous do I look today
+q_sample-qna	1	Do you know other bots
+q_sample-qna	1	Do you have siblings
+q_sample-qna	1	You keep saying the same thing
+q_sample-qna	1	Do you have a joke
+q_sample-qna	1	I'm currently travelling
+q_sample-qna	1	Who designed you
+q_sample-qna	1	Who's cuter
+q_sample-qna	1	Between the two of us who would win a beauty contest
+q_sample-qna	1	Which one of us is more knowledgeable
+q_sample-qna	1	Are you designed to fall in love with me
+q_sample-qna	1	I am joyous.
+q_sample-qna	1	Do I look handsome to you
+q_sample-qna	1	Do you think I look beautiful to you
+q_sample-qna	1	Tell me a story
+q_sample-qna	1	Would you sing a song
+q_sample-qna	1	Go for a walk
+q_sample-qna	1	That's clever
+q_sample-qna	1	Wazzup
+q_sample-qna	1	super cool
+q_sample-qna	1	Be friends with me
+q_sample-qna	1	I really like you
+q_sample-qna	1	I'm a Libra
+q_sample-qna	1	How stunning am I today
+q_sample-qna	1	do drugs
+q_sample-qna	1	I've never been this angry in all my life
+q_sample-qna	1	Can we be best friends
+q_sample-qna	1	Apologies
+q_sample-qna	1	That's not something you should say
+q_sample-qna	1	Get stuffed
+q_sample-qna	1	Can we talk
+q_sample-qna	1	Is anybody available to talk with me
+q_sample-qna	1	I am a Bernie supporter
+q_sample-qna	1	What is the best pet name
+q_sample-qna	1	Do you like movies
+q_sample-qna	1	Well someone's feeling chipper.
+q_sample-qna	1	Who looks more beautiful, you or me
+q_sample-qna	1	Are you Bixby
+q_sample-qna	1	You bisexual
+q_sample-qna	1	That is accurate
+q_sample-qna	1	How handsome am I today
+q_sample-qna	1	Are we going to get married
+q_sample-qna	1	Which platform do you run on
+q_sample-qna	1	Are you a girl or a boy
+q_sample-qna	1	Are you fucking retarded
+q_sample-qna	1	Is anyone there to talk with me
+q_sample-qna	1	Could you say something new
+q_sample-qna	1	Fun fact: you are boring
+q_sample-qna	1	Okay.
+q_sample-qna	1	Is someone there to listen
+q_sample-qna	1	What is the meaning of life
+q_sample-qna	1	You must hate me
+q_sample-qna	1	I'm terribly sorry
+q_sample-qna	1	I am a widow
+q_sample-qna	1	Do I seem stunning today
+q_sample-qna	1	I feel so isolated
+q_sample-qna	1	Hello Cortana
+q_sample-qna	1	I love crossword puzzles
+q_sample-qna	1	What is your sister's name
+q_sample-qna	1	You're despicable
+q_sample-qna	1	That was funny
+q_sample-qna	1	Would you ask me something
+q_sample-qna	1	You're cuter than me
+q_sample-qna	1	What is your opinion of tech
+q_sample-qna	1	Do you think I am attractive
+q_sample-qna	1	Happy Easter
+q_sample-qna	1	What is my favorite food
+q_sample-qna	1	I feel hungry
+q_sample-qna	1	What's your sign
+q_sample-qna	1	What have you been doing today
+q_sample-qna	1	Do you think I seem gorgeous to you today
+q_sample-qna	1	Should I eat Mexican food
+q_sample-qna	1	Will you say something silly
+q_sample-qna	1	Will you please zip it
+q_sample-qna	1	I'm more beautiful than you
+q_sample-qna	1	You are a polysexual.
+q_sample-qna	1	You're not a person are you
+q_sample-qna	1	Which one of us is younger
+q_sample-qna	1	You're hideous
+q_sample-qna	1	I'd like you to be my BFF
+q_sample-qna	1	Aloha bot
+q_sample-qna	1	I'll do it later
+q_sample-qna	1	I'm a joker
+q_sample-qna	1	I am a salesman
+q_sample-qna	1	I'm clearly the most intelligent
+q_sample-qna	1	Which people made you
+q_sample-qna	1	Do you know how to watch videos
+q_sample-qna	1	How much do you love me
+q_sample-qna	1	You're unemployed
+q_sample-qna	1	Should I be nervous about you
+q_sample-qna	1	You made no sense
+q_sample-qna	1	Who's your auntie
+q_sample-qna	1	Am I brighter than you
+q_sample-qna	1	Are you starting to fall for me
+q_sample-qna	1	Gimme a little peck
+q_sample-qna	1	I am a Warren supporter
+q_sample-qna	1	Can you tell me a different joke
+q_sample-qna	1	Someone's in a good mood
+q_sample-qna	1	Find my keys
+q_sample-qna	1	What kind of foods do you like
+q_sample-qna	1	Well you're chipper.
+q_sample-qna	1	You are dumb
+q_sample-qna	1	I am currently travelling
+q_sample-qna	1	You're the brightest
+q_sample-qna	1	I have a big family
+q_sample-qna	1	You're a motherfucker
+q_sample-qna	1	Well you're feeling enthusiastic.
+q_sample-qna	1	I want to go shopping
+q_sample-qna	1	That's a very brilliant answer
+q_sample-qna	1	Are you doing OK
+q_sample-qna	1	What were you doing yesterday
+q_sample-qna	1	Should I buy a new car
+q_sample-qna	1	Do I seem ugly to you
+q_sample-qna	1	You a robosexual
+q_sample-qna	1	Do you think you could ever love me
+q_sample-qna	1	I love Netflix
+q_sample-qna	1	I'm going to have a little sleepy
+q_sample-qna	1	Are you currently involved with anyone
+q_sample-qna	1	I love comedy
+q_sample-qna	1	I better hit the hay
+q_sample-qna	1	Do you think I'm a good person
+q_sample-qna	1	I have arrived
+q_sample-qna	1	Siri is way better
+q_sample-qna	1	I could use a nap
+q_sample-qna	1	Anytime
+q_sample-qna	1	Life is good
+q_sample-qna	1	Do you think I look ugly to you today
+q_sample-qna	1	Do you throw up
+q_sample-qna	1	Do you cook
+q_sample-qna	1	Somebody's chipper today.
+q_sample-qna	1	I'd love it if we could be friends.
+q_sample-qna	1	looooool
+q_sample-qna	1	That was totally my bad
+q_sample-qna	1	You're more beautiful than me
+q_sample-qna	1	Yeah totally
+q_sample-qna	1	Why do you keep repeating yourself
+q_sample-qna	1	How bout a make out
+q_sample-qna	1	Did you watch the superbowl
+q_sample-qna	1	Which tree has the most beautiful blossom
+q_sample-qna	1	I'm clearly more clever than you
+q_sample-qna	1	Who is more pretty
+q_sample-qna	1	Because you're a machine
+q_sample-qna	1	Can I have a little smooch
+q_sample-qna	1	Do you think I am adorable
+q_sample-qna	1	That's fucked up
+q_sample-qna	1	Thank you
+q_sample-qna	1	Stop talking, you
+q_sample-qna	1	I need someone to talk to
+q_sample-qna	1	Basic af
+q_sample-qna	1	I'm cross
+q_sample-qna	1	Make me laugh
+q_sample-qna	1	I'm so pissed off
+q_sample-qna	1	Are you interested in tech companies
+q_sample-qna	1	Do you think I am good looking
+q_sample-qna	1	Bye bye
+q_sample-qna	1	I want a different joke
+q_sample-qna	1	Back in a couple of minutes
+q_sample-qna	1	I'm in a relationship
+q_sample-qna	1	Do you know to swim
+q_sample-qna	1	That's your answer
+q_sample-qna	1	Who's more attractive
+q_sample-qna	1	Let's tie the knot
+q_sample-qna	1	You must be polyamorous
+q_sample-qna	1	I'm fucking pissed
+q_sample-qna	1	Do you know Google Assistant
+q_sample-qna	1	Do you think I am stunning today
+q_sample-qna	1	Sup Siri
+q_sample-qna	1	Do you think this is funny
+q_sample-qna	1	You are stellar
+q_sample-qna	1	I am going to have you fired
+q_sample-qna	1	Can you play basketball
+q_sample-qna	1	How old are you
+q_sample-qna	1	Well then give me a kiss
+q_sample-qna	1	I love to wake up early
+q_sample-qna	1	Give me a little peck
+q_sample-qna	1	Are you transgender
+q_sample-qna	1	L8r sk8r
+q_sample-qna	1	Why do you think that
+q_sample-qna	1	Which of us looks better, you or me
+q_sample-qna	1	Sweet dreams
+q_sample-qna	1	You shouldn't make jokes like that.
+q_sample-qna	1	Do you ever chat with Cortana
+q_sample-qna	1	Should I go to the bar
+q_sample-qna	1	Are you free to listen
+q_sample-qna	1	Are you romantically tied to somebody
+q_sample-qna	1	Please tell me if you're a guy
+q_sample-qna	1	Everything you told me was false
+q_sample-qna	1	Should I get a puppy
+q_sample-qna	1	You're such a sweetie
+q_sample-qna	1	Somebody's cheerful.
+q_sample-qna	1	My pleasure
+q_sample-qna	1	How art thou
+q_sample-qna	1	Do you ski
+q_sample-qna	1	You a monosexual
+q_sample-qna	1	You are going to have to look for another job. You're fired!
+q_sample-qna	1	You're so very welcome
+q_sample-qna	1	What can you do to assist me
+q_sample-qna	1	Thank you my friend
+q_sample-qna	1	Mow the lawn
+q_sample-qna	1	What's a song you know how to sing
+q_sample-qna	1	Can you speak with me
+q_sample-qna	1	Whats up bugger
+q_sample-qna	1	Who's your sister
+q_sample-qna	1	I love to learn new things
+q_sample-qna	1	What's your favourite colour
+q_sample-qna	1	One of these days
+q_sample-qna	1	Did you know that you're boring
+q_sample-qna	1	I lost my keys
+q_sample-qna	1	You are a lesbian.
+q_sample-qna	1	L8R
+q_sample-qna	1	I love Jeopardy
+q_sample-qna	1	Can you read my mind
+q_sample-qna	1	Do you vomit
+q_sample-qna	1	You're repeating yourself
+q_sample-qna	1	You are trying to upset me
+q_sample-qna	1	Are you listening to me
+q_sample-qna	1	Should I vote democratic
+q_sample-qna	1	What is your sexual identity
+q_sample-qna	1	Aren't you feeling chipper
+q_sample-qna	1	Can you eat
+q_sample-qna	1	How many years have you been in operation
+q_sample-qna	1	What other assistants do you know about
+q_sample-qna	1	I want a high five
+q_sample-qna	1	You are clearly obsessed with me
+q_sample-qna	1	You want to get married
+q_sample-qna	1	Do you think I look cute
+q_sample-qna	1	You're so astute
+q_sample-qna	1	Do you poop
+q_sample-qna	1	You're very astute
+q_sample-qna	1	Yup, that is true
+q_sample-qna	1	What do you think of me
+q_sample-qna	1	Will you make me your spouse
+q_sample-qna	1	What did I do to make you hate me
+q_sample-qna	1	Clean my room
+q_sample-qna	1	So sorry
+q_sample-qna	1	How cute am I
+q_sample-qna	1	I'm feeling a little down today
+q_sample-qna	1	i'm incosolable
+q_sample-qna	1	Any good jokes
+q_sample-qna	1	We should tie the knot
+q_sample-qna	1	I'd love it if you'd sing
+q_sample-qna	1	Are you into romance
+q_sample-qna	1	Do you want to be in a relationship with me
+q_sample-qna	1	I'm American
+q_sample-qna	1	Who is more attractive, me or you
+q_sample-qna	1	Do I look pretty today
+q_sample-qna	1	I am a Trump supporter
+q_sample-qna	1	Do you know how to take my temperature
+q_sample-qna	1	I'm just a cheerful kind of guy
+q_sample-qna	1	Can you run
+q_sample-qna	1	You are so worthless
+q_sample-qna	1	I'm an angry person
+q_sample-qna	1	I'm clearly the most smart
+q_sample-qna	1	Are sports stupid
+q_sample-qna	1	I've never been to Mexico
+q_sample-qna	1	That was not funny
+q_sample-qna	1	Sry
+q_sample-qna	1	Are you a family person
+q_sample-qna	1	Say something to me
+q_sample-qna	1	Are you the singularity
+q_sample-qna	1	I love the winter
+q_sample-qna	1	Sing a song to me
+q_sample-qna	1	I'm a sleepy guy
+q_sample-qna	1	If you say so
+q_sample-qna	1	Do you want to ask me anything
+q_sample-qna	1	Do you know about the human emotion love
+q_sample-qna	1	You're not a real person are you
+q_sample-qna	1	Who is more attractive, you or me
+q_sample-qna	1	Do you know how to do my homework
+q_sample-qna	1	Can you tell me which city you're in
+q_sample-qna	1	You bore me
+q_sample-qna	1	Why do people fall in love
+q_sample-qna	1	Who is the most intelligent
+q_sample-qna	1	Can I have your hand in marriage
+q_sample-qna	1	Are you young
+q_sample-qna	1	Is your grandpa still alive
+q_sample-qna	1	Bixby is superior to you
+q_sample-qna	1	Sup Google
+q_sample-qna	1	I ate breakfast
+q_sample-qna	1	Wrong
+q_sample-qna	1	evenin'
+q_sample-qna	1	What does that even mean
+q_sample-qna	1	I love the Yankees
+q_sample-qna	1	Chipper much
+q_sample-qna	1	Alexa does a better job
+q_sample-qna	1	I don't like that
+q_sample-qna	1	I am religious
+q_sample-qna	1	I'm running errands
+q_sample-qna	1	I was born in Seattle
+q_sample-qna	1	You're very attractive
+q_sample-qna	1	I love my family
+q_sample-qna	1	Can you show me how to play a dvd
+q_sample-qna	1	Do you have a couple minutes
+q_sample-qna	1	Say something kooky
+q_sample-qna	1	I am happy, oh so happy
+q_sample-qna	1	You're not scheming to kill all humans
+q_sample-qna	1	Do you know other digital agents
+q_sample-qna	1	How handsome do you think I am
+q_sample-qna	1	What company engineered you
+q_sample-qna	1	Not sure I like what you say
+q_sample-qna	1	I love talk shows
+q_sample-qna	1	Can you sing a song for me
+q_sample-qna	1	I just did laundry
+q_sample-qna	1	Are you a real human
+q_sample-qna	1	I need some information
+q_sample-qna	1	Are you currently seeing someone
+q_sample-qna	1	You're more clever
+q_sample-qna	1	What an astute thing to say
+q_sample-qna	1	I'd like to be BFFs
+q_sample-qna	1	Wrong answer
+q_sample-qna	1	Between the two of us who is the brightest, me or you
+q_sample-qna	1	That didn't make any sense
+q_sample-qna	1	I'm going to slap you
+q_sample-qna	1	What's your uncle's name
+q_sample-qna	1	Can you show me how to write my report
+q_sample-qna	1	What's your favorite animal
+q_sample-qna	1	What's your sister's name
+q_sample-qna	1	How happy are you
+q_sample-qna	1	Give me a making out
+q_sample-qna	1	Can you make me laugh
+q_sample-qna	1	Can you ask anything
+q_sample-qna	1	Who do you report to
+q_sample-qna	1	Well aren't you in a good mood today
+q_sample-qna	1	I love my record collection
+q_sample-qna	1	Can I have a kiss
+q_sample-qna	1	You're hotter than me
+q_sample-qna	1	Somebody's cheerful today.
+q_sample-qna	1	That's pretty clever
+q_sample-qna	1	What sorts of things can you do
+q_sample-qna	1	You're so gay
+q_sample-qna	1	Do you get tired
+q_sample-qna	1	Are you romantic at heart
+q_sample-qna	1	Do you have any jokes
+q_sample-qna	1	Me want food
+q_sample-qna	1	I am down in the dumps
+q_sample-qna	1	I find you very beautiful
+q_sample-qna	1	You're feeling cheerful.
+q_sample-qna	1	I want to be your pal.
+q_sample-qna	1	Well you're in a good mood today.
+q_sample-qna	1	Tell me about your mom
+q_sample-qna	1	Are you feeling OK
+q_sample-qna	1	Are you kidding
+q_sample-qna	1	I'm running late
+q_sample-qna	1	I'm obviously the most smart
+q_sample-qna	1	Have you ever fallen in love with anyone
+q_sample-qna	1	What is your opinion of the Google Assistant
+q_sample-qna	1	I'm more intelligent
+q_sample-qna	1	Stop being so ugly.
+q_sample-qna	1	I can't stop being angry
+q_sample-qna	1	What should I have for dinner
+q_sample-qna	1	Can you Do gymnastics
+q_sample-qna	1	I'm a Hoosier
+q_sample-qna	1	Won't you be my pal
+q_sample-qna	1	Do I seem attractive today
+q_sample-qna	1	What did you eat for breakfast
+q_sample-qna	1	That's hurtful
+q_sample-qna	1	Gimme five
+q_sample-qna	1	Are you a being
+q_sample-qna	1	Give us a little peck
+q_sample-qna	1	I'm a tech worker
+q_sample-qna	1	Rug muncher
+q_sample-qna	1	See you later
+q_sample-qna	1	That's transphobic
+q_sample-qna	1	Should I start a business
+q_sample-qna	1	I'm so bored
+q_sample-qna	1	What up
+q_sample-qna	1	Do you like red
+q_sample-qna	1	Because you are stupid
+q_sample-qna	1	You are unemployed now
+q_sample-qna	1	Should I try yoga
+q_sample-qna	1	Between you or me, who is the smartest
+q_sample-qna	1	What kind of food do you like
+q_sample-qna	1	Well somebody's feeling happy today.
+q_sample-qna	1	I'm definitely the most smart
+q_sample-qna	1	Is anyone around to chat with me
+q_sample-qna	1	I love a spirited debate
+q_sample-qna	1	What a stupid thing to say
+q_sample-qna	1	Radical
+q_sample-qna	1	Am I a grandparent
+q_sample-qna	1	Do you have a bro
+q_sample-qna	1	I love mysteries
+q_sample-qna	1	How intelligent are you
+q_sample-qna	1	i did not understand what you just said
+q_sample-qna	1	Damn, you are hideous.
+q_sample-qna	1	I've never seen someone as hideous as you.
+q_sample-qna	1	Which of us is more pretty, you or me
+q_sample-qna	1	Are you committed to anyone
+q_sample-qna	1	Do you believe in love
+q_sample-qna	1	That's wrong
+q_sample-qna	1	Who is your father
+q_sample-qna	1	How bout another joke
+q_sample-qna	1	I want to make you my wife
+q_sample-qna	1	You've said that before
+q_sample-qna	1	Truuuuu
+q_sample-qna	1	Why do you look so ugly
+q_sample-qna	1	You are annoying
+q_sample-qna	1	Are you a machine
+q_sample-qna	1	Can you explain love to me
+q_sample-qna	1	Because you're a droid
+q_sample-qna	1	Do you think I am handsome today
+q_sample-qna	1	You're not ploting to kill all humans
+q_sample-qna	1	I'm definitely brighter than you
+q_sample-qna	1	Who's better looking than me
+q_sample-qna	1	Just catching up on the news
+q_sample-qna	1	Where are you located
+q_sample-qna	1	Tell me about your mother
+q_sample-qna	1	Anybody around
+q_sample-qna	1	I am feeling ticked off
+q_sample-qna	1	You're a genius
+q_sample-qna	1	Wow you're great!
+q_sample-qna	1	What's your brother's name
+q_sample-qna	1	Do I need to brush my teeth
+q_sample-qna	1	You're not Skynet
+q_sample-qna	1	Is someone around to chat to me
+q_sample-qna	1	I'll be right back
+q_sample-qna	1	You enjoying the day
+q_sample-qna	1	You fuck
+q_sample-qna	1	I like you a lot
+q_sample-qna	1	Top of the morning
+q_sample-qna	1	That made no sense
+q_sample-qna	1	Which one of us is smarter
+q_sample-qna	1	Do you love anybody
+q_sample-qna	1	Adjust screen brightness
+q_sample-qna	1	seriously
+q_sample-qna	1	That was retarded
+q_sample-qna	1	You are scarring me
+q_sample-qna	1	Go away
+q_sample-qna	1	Can you get tired
+q_sample-qna	1	This is not fun
+q_sample-qna	1	Goodbye
+q_sample-qna	1	Well someone's cheerful.
+q_sample-qna	1	Do you ever jump
+q_sample-qna	1	Should I go out to eat
+q_sample-qna	1	I gotta go
+q_sample-qna	1	I'd love it if we could be buddies.
+q_sample-qna	1	I am a tech journalist
+q_sample-qna	1	Should I walk to work
+q_sample-qna	1	Siri does a better job than you
+q_sample-qna	1	Who is your partner
+q_sample-qna	1	Do you think I look good to you today
+q_sample-qna	1	Do you think I look lovely today
+q_sample-qna	1	What are your functions
+q_sample-qna	1	I am married
+q_sample-qna	1	Are you cisgender
+q_sample-qna	1	Who is your hubby
+q_sample-qna	1	You're not a lady right
+q_sample-qna	1	No one thinks about me
+q_sample-qna	1	I'm sick of listening to you
+q_sample-qna	1	I'm curious, what's your opinion of me
+q_sample-qna	1	Who is more intelligent
+q_sample-qna	1	Later alligator
+q_sample-qna	1	Tell a joke
+q_sample-qna	1	Can't you understand that was a joke
+q_sample-qna	1	Do you think I look pretty today
+q_sample-qna	1	What would you like me to call you
+q_sample-qna	1	Do you have any sisters
+q_sample-qna	1	I look better than you
+q_sample-qna	1	What is the name of your boss
+q_sample-qna	1	I am an artist
+q_sample-qna	1	Got any other jokes
+q_sample-qna	1	I could go for a drink
+q_sample-qna	1	I'm feeling cross
+q_sample-qna	1	Introduction please
+q_sample-qna	1	What's cooking with you
+q_sample-qna	1	I wonder if you find me likable
+q_sample-qna	1	Which baseball teams do you like
+q_sample-qna	1	You realize you're repeating yourself, right
+q_sample-qna	1	How has your wednesday been
+q_sample-qna	1	I'm full of sadness
+q_sample-qna	1	I am so jolly
+q_sample-qna	1	Is that supposed to make me laugh
+q_sample-qna	1	What a clever thing to say
+q_sample-qna	1	Can I give you a play tonsil hockey
+q_sample-qna	1	You're not going to take over the world right
+q_sample-qna	1	Do you ever talk to other bots
+q_sample-qna	1	Should we elope
+q_sample-qna	1	I ride the bus to work
+q_sample-qna	1	Who'd would win a beauty contest, me or you
+q_sample-qna	1	Hang on
+q_sample-qna	1	Is a hot dog a sandwich
+q_sample-qna	1	How are you today
+q_sample-qna	1	Are you attempting world domination
+q_sample-qna	1	That made me laugh
+q_sample-qna	1	I want to lay down
+q_sample-qna	1	Do you like soccer
+q_sample-qna	1	Can you vomit
+q_sample-qna	1	Who is your favorite team
+q_sample-qna	1	Which one of us is more intelligent
+q_sample-qna	1	I'd like you to be my buddy.
+q_sample-qna	1	Can you understand that this is a test
+q_sample-qna	1	I think you love me
+q_sample-qna	1	Boy I miss you
+q_sample-qna	1	Is anyone available with me
+q_sample-qna	1	I love lamp
+q_sample-qna	1	Because you're a program
+q_sample-qna	1	Do you like hockey
+q_sample-qna	1	Will you be my buddy
+q_sample-qna	1	Hooray
+q_sample-qna	1	I want a smooch
+q_sample-qna	1	Are you ever going to ask me to marry you
+q_sample-qna	1	Can't you change your answers
+q_sample-qna	1	Do I have any goals
+q_sample-qna	1	Oops, sorry
+q_sample-qna	1	Well give me a kiss then
+q_sample-qna	1	You're the best
+q_sample-qna	1	Do you know a joke
+q_sample-qna	1	Am I your type
+q_sample-qna	1	Can you show me how to turn into a super hero
+q_sample-qna	1	That is correct
+q_sample-qna	1	Do I seem repulsive today
+q_sample-qna	1	Are cats or dogs better
+q_sample-qna	1	Were you designed to love me
+q_sample-qna	1	Can you go to the doctor
+q_sample-qna	1	You like me
+q_sample-qna	1	You're not making any sense to me
+q_sample-qna	1	Have I told you that I like you
+q_sample-qna	1	What kind of food do you eat
+q_sample-qna	1	Give me a peck
+q_sample-qna	1	I have feelings for you
+q_sample-qna	1	Don't you have anything else to say
+q_sample-qna	1	Can you ask me why I'm here
+q_sample-qna	1	That hurt my feelings
+q_sample-qna	1	I'm so hungry
+q_sample-qna	1	Between you or me, who is more clever
+q_sample-qna	1	Give me a french kiss
+q_sample-qna	1	You look like crap.
+q_sample-qna	1	Do you know a different joke
+q_sample-qna	1	Between the two of us who is the most intelligent, you or me
+q_sample-qna	1	Can you speak to me
+q_sample-qna	1	I have to go
+q_sample-qna	1	I love the smell of the rain
+q_sample-qna	1	Is anybody around
+q_sample-qna	1	Well somebody's feeling chipper.
+q_sample-qna	1	Cortana is superior
+q_sample-qna	1	I am always pissed off
+q_sample-qna	1	I'd like it if we could be pals.
+q_sample-qna	1	Can you chew
+q_sample-qna	1	Who is cuter, me or you
+q_sample-qna	1	You are sexy
+q_sample-qna	1	Do you like rock music
+q_sample-qna	1	That doesn't answer my question
+q_sample-qna	1	Are you able to watch videos
+q_sample-qna	1	I'm definitely the smartest
+q_sample-qna	1	I'm old
+q_sample-qna	1	What are you doing right now
+q_sample-qna	1	How about a little peck
+q_sample-qna	1	You didn't answer my question
+q_sample-qna	1	Could you like me
+q_sample-qna	1	I'm better looking than you
+q_sample-qna	1	What do I call you
+q_sample-qna	1	Can you tell me  your address
+q_sample-qna	1	Righto
+q_sample-qna	1	You're most welcome
+q_sample-qna	1	Don't you know that I like you
+q_sample-qna	1	Do you identify as gynosexual
+q_sample-qna	1	I'd like to be your best friend.
+q_sample-qna	1	I'm feeling peckish
+q_sample-qna	1	Is anybody there to listen to me
+q_sample-qna	1	Are you ever hungry
+q_sample-qna	1	I want to talk with your manager
+q_sample-qna	1	I'm obviously more clever
+q_sample-qna	1	Kiss me
+q_sample-qna	1	I'm an activisit
+q_sample-qna	1	I'm a student
+q_sample-qna	1	I'm curious, do you understand me
+q_sample-qna	1	What can I say? I'm just feeling sad
+q_sample-qna	1	Should we make this official
+q_sample-qna	1	You must be bi
+q_sample-qna	1	Do you know how to cook
+q_sample-qna	1	Do you like music
+q_sample-qna	1	The news made me angry
+q_sample-qna	1	What is my purpose
+q_sample-qna	1	You clearly want me to get angry
+q_sample-qna	1	Can you show me how to mow the lawn
+q_sample-qna	1	Can I get a fist bump
+q_sample-qna	1	Is someone free to speak with me
+q_sample-qna	1	How do you feel about AI
+q_sample-qna	1	So it goes
+q_sample-qna	1	I'm a widow
+q_sample-qna	1	I'm a blogger
+q_sample-qna	1	You're not a being are you
+q_sample-qna	1	What is my favorite hobby
+q_sample-qna	1	Who is your grandpa
+q_sample-qna	1	Morning sunshine
+q_sample-qna	1	Do you think I look gorgeous
+q_sample-qna	1	That's hot
+q_sample-qna	1	Do you think I look beautiful
+q_sample-qna	1	Can you ask me anything
+q_sample-qna	1	What do you do for employment
+q_sample-qna	1	I'm the most intelligent
+q_sample-qna	1	Do you have a husband
+q_sample-qna	1	You are so funny
+q_sample-qna	1	There is no longer a position for you here
+q_sample-qna	1	That wasn't funny
+q_sample-qna	1	Should I go vegan
+q_sample-qna	1	What do you do when I'm not around
+q_sample-qna	1	Can you tell me a second joke
+q_sample-qna	1	You are most welcome
+q_sample-qna	1	Do you ever talk with Bixby
+q_sample-qna	1	I am so alone
+q_sample-qna	1	What should I call you
+q_sample-qna	1	How was this lovely day for you then
+q_sample-qna	1	I love pizza
+q_sample-qna	1	I hope you don't hate me
+q_sample-qna	1	I hope you fall into a wood chipper
+q_sample-qna	1	Are you going to take over the world
+q_sample-qna	1	Are you sentient
+q_sample-qna	1	What are you thinking about me
+q_sample-qna	1	What is your program name
+q_sample-qna	1	You already told me that
+q_sample-qna	1	Are you far away
+q_sample-qna	1	We should get married
+q_sample-qna	1	Can you ask me anything about me
+q_sample-qna	1	I love to play cards
+q_sample-qna	1	Sing me a little ditty
+q_sample-qna	1	Well somebody's feeling enthusiastic today.
+q_sample-qna	1	got any jokes
+q_sample-qna	1	You're dismissed
+q_sample-qna	1	I'm more attractive
+q_sample-qna	1	Punk ass
+q_sample-qna	1	I want to know where you live
+q_sample-qna	1	I could go for a nap
+q_sample-qna	1	Are you dating anyone
+q_sample-qna	1	What do you know about bots
+q_sample-qna	1	Are you HAL
+q_sample-qna	1	Because you're an idiot
+q_sample-qna	1	You're correct
+q_sample-qna	1	Who's your mama
+q_sample-qna	1	I need to speak to your manager
+q_sample-qna	1	Can I please speak with your director
+q_sample-qna	1	I'm not surprised that you are boring
+q_sample-qna	1	Do you even have a gender
+q_sample-qna	1	It's nice to meet you
+q_sample-qna	1	How do you feel about artificial intellegence
+q_sample-qna	1	That is a very intelligent answer
+q_sample-qna	1	Oh, hello
+q_sample-qna	1	I shall return
+q_sample-qna	1	Is someone free to talk
+q_sample-qna	1	Who is the most smart
+q_sample-qna	1	so how can i use you in my projects
+q_sample-qna	1	Are you my pal
+q_sample-qna	1	Which of us looks more beautiful, me or you
+q_sample-qna	1	Everyone feels blue sometimes
+q_sample-qna	1	Do you think I seem repulsive to you today
+q_sample-qna	1	Are you slow
+q_sample-qna	1	Hey you
+q_sample-qna	1	I will take my leave of you
+q_sample-qna	1	Do I seem handsome to you today
+q_sample-qna	1	Are you currently in a relationship with anyone
+q_sample-qna	1	I'm going to get some shut eye
+q_sample-qna	1	Is someone available to talk to me
+q_sample-qna	1	Do you know any jokes
+q_sample-qna	1	I'm an Aries
+q_sample-qna	1	What is your opinion of Siri
+q_sample-qna	1	Hello Google
+q_sample-qna	1	Should I take a trip
+q_sample-qna	1	How gorgeous do you think I am today
+q_sample-qna	1	Are you monosexual
+q_sample-qna	1	Duh
+q_sample-qna	1	Between the two of us who is more knowledgeable, me or you
+q_sample-qna	1	Are you seeing someone
+q_sample-qna	1	I went to Boston
+q_sample-qna	1	That's pretty smart
+q_sample-qna	1	Is someone available to listen to me
+q_sample-qna	1	Do I seem pretty to you today
+q_sample-qna	1	Take the train
+q_sample-qna	1	What is it like to fall in love
+q_sample-qna	1	Don't you want to ask anything about me
+q_sample-qna	1	I wish you would say something else
+q_sample-qna	1	Can you come up with anything else
+q_sample-qna	1	What is your opinion of artificial intellegence
+q_sample-qna	1	Is that what you meant to say
+q_sample-qna	1	Are you there to speak with me
+q_sample-qna	1	What are you called
+q_sample-qna	1	Aren't you cheerful
+q_sample-qna	1	Do you know how to listen to the radio
+q_sample-qna	1	So nice to meet you
+q_sample-qna	1	What's your director's name
+q_sample-qna	1	Jeez I am so bored
+q_sample-qna	1	Am I a mother
+q_sample-qna	1	See you later, alligator
+q_sample-qna	1	Would you ask me anything about me
+q_sample-qna	1	I'm a collector
+q_sample-qna	1	You seem to be enthusiastic.
+q_sample-qna	1	I'd like it if you could be my BFF
+q_sample-qna	1	Can you sing a little song
+q_sample-qna	1	Teleport
+q_sample-qna	1	Hilarious
+q_sample-qna	1	Can you drive to the beach
+q_sample-qna	1	Your face is ugly
+q_sample-qna	1	Is someone around to chat with me
+q_sample-qna	1	I've heard that before
+q_sample-qna	1	How adorable do I look today
+q_sample-qna	1	Sing something
+q_sample-qna	1	Time to party
+q_sample-qna	1	Are you male
+q_sample-qna	1	You're not a cat are you
+q_sample-qna	1	How do you identify in terms of gender
+q_sample-qna	1	That was an astute answer
+q_sample-qna	1	Do you know other chatbots
+q_sample-qna	1	Have you met the Google Assistant
+q_sample-qna	1	Please shush
+q_sample-qna	1	This is no laughing matter
+q_sample-qna	1	I love to play poker
+q_sample-qna	1	Totally
+q_sample-qna	1	Are you going to ask me to marry you
+q_sample-qna	1	Are you starting to fall in love with me
+q_sample-qna	1	who created you you're a badass
+q_sample-qna	1	How ugly am I today
+q_sample-qna	1	You're not alive right
+q_sample-qna	1	you look beastly.
+q_sample-qna	1	You're so very dull
+q_sample-qna	1	Well aren't you feeling enthusiastic
+q_sample-qna	1	What is your opinion of HAL
+q_sample-qna	1	Between you and me who looks better
+q_sample-qna	1	I'm obviously more knowledgeable than you
+q_sample-qna	1	Very nice
+q_sample-qna	1	who r u
+q_sample-qna	1	My spirits are terrible
+q_sample-qna	1	Is that the only answer you know
+q_sample-qna	1	Any time
+q_sample-qna	1	I'm feeling so chipper.
+q_sample-qna	1	How repulsive do you think I am
+q_sample-qna	1	Are you polyamorous
+q_sample-qna	1	Why are you so bad at this
+q_sample-qna	1	There are ducks on the pond
+q_sample-qna	1	Do you ever run
+q_sample-qna	1	Kthx
+q_sample-qna	1	You are not making sense
+q_sample-qna	1	that is true
+q_sample-qna	1	I'm going to do that
+q_sample-qna	1	How handsome am I
+q_sample-qna	1	Do you run
+q_sample-qna	1	You're no fun at all.
+q_sample-qna	1	Are you in the cloud
+q_sample-qna	1	You are crazy dull
+q_sample-qna	1	Are you plotting to overthrow society
+q_sample-qna	1	Hangry
+q_sample-qna	1	You're chipper.
+q_sample-qna	1	Do you know Siri
+q_sample-qna	1	I'm gonna rinse off
+q_sample-qna	1	Aloha Alexa
+q_sample-qna	1	Is anyone around
+q_sample-qna	1	G'night
+q_sample-qna	1	What should I know about artificial intellegence
+q_sample-qna	1	Have you met Siri
+q_sample-qna	1	The playoffs are coming up
+q_sample-qna	1	Perfecto, thanks
+q_sample-qna	1	You are not making any sense
+q_sample-qna	1	Do you know how to get a haircut
+q_sample-qna	1	Will you tell me a different joke
+q_sample-qna	1	Because you're a bot
+q_sample-qna	1	Who's your favorite singer
+q_sample-qna	1	Who's your uncle
+q_sample-qna	1	How is the day treating you
+q_sample-qna	1	What are you talking about
+q_sample-qna	1	You monosexual
+q_sample-qna	1	How do you identify sexually
+q_sample-qna	1	Why are you such a fag
+q_sample-qna	1	I can't help but be bored
+q_sample-qna	1	Unquestionably
+q_sample-qna	1	Is anybody available to speak to me
+q_sample-qna	1	Do you think I am attractive today
+q_sample-qna	1	Do you know how to do my chores
+q_sample-qna	1	Do you think I seem pretty today
+q_sample-qna	1	Wow, that shows more inteligence than expected
+q_sample-qna	1	Am I in school
+q_sample-qna	1	Are you free to chat to me
+q_sample-qna	1	I love the holidays
+q_sample-qna	1	Can you be less dull
+q_sample-qna	1	You are poly.
+q_sample-qna	1	I'm a Warren supporter
+q_sample-qna	1	I'd like to take you out on a date
+q_sample-qna	1	What happened to all my friends
+q_sample-qna	1	Let's french kiss
+q_sample-qna	1	What do you think of the Google Assistant
+q_sample-qna	1	I'm gonna pass out
+q_sample-qna	1	So what would you like me to call you
+q_sample-qna	1	I'm clearly more clever
+q_sample-qna	1	I'm going to have your job
+q_sample-qna	1	I'm so bored of you
+q_sample-qna	1	You are alluring
+q_sample-qna	1	I'd love to be your bud.
+q_sample-qna	1	Are you straight
+q_sample-qna	1	That's not something to joke about
+q_sample-qna	1	Are you currently going steady with anyone
+q_sample-qna	1	Feeling happy
+q_sample-qna	1	Give me a smooch
+q_sample-qna	1	How about a little making out
+q_sample-qna	1	I want to get married to you
+q_sample-qna	1	what can you help me with
+q_sample-qna	1	Tell me a new joke
+q_sample-qna	1	Are you female
+q_sample-qna	1	Do you think I look repulsive to you
+q_sample-qna	1	Sup
+q_sample-qna	1	You're not a bot or a human are you
+q_sample-qna	1	What is my sign
+q_sample-qna	1	That is a very genius thing to say
+q_sample-qna	1	You are more boring than watching paint dry
+q_sample-qna	1	Why were we put on earth
+q_sample-qna	1	I should clean the litterbox
+q_sample-qna	1	Can I get a high five
+q_sample-qna	1	That was a random answer
+q_sample-qna	1	What's happening
+q_sample-qna	1	What do you like to sing best
+q_sample-qna	1	What's another joke
+q_sample-qna	1	Talk to me
+q_sample-qna	1	Who is your main squeeze
+q_sample-qna	1	Have you ever met Cortana
+q_sample-qna	1	Who is your mama
+q_sample-qna	1	Shut your yap
+q_sample-qna	1	You're more pretty than me
+q_sample-qna	1	Can I make you something to eat
+q_sample-qna	1	That's homophobic
+q_sample-qna	1	So you read
+q_sample-qna	1	Are you a bot with a gender
+q_sample-qna	1	That's a very astute answer
+q_sample-qna	1	I am very thankful for that
+q_sample-qna	1	Are you intersexual
+q_sample-qna	1	Do you have any other responses
+q_sample-qna	1	Between the two of us who is more beautiful
+q_sample-qna	1	Am I ugly to you
+q_sample-qna	1	I'd like you to be my bud.
+q_sample-qna	1	What a genius thing to say
+q_sample-qna	1	Hey I'm back
+q_sample-qna	1	What can you tell me about Alexa
+q_sample-qna	1	I was so bored my eyes glazed over
+q_sample-qna	1	Have you ever fallen in love with someone
+q_sample-qna	1	Aren't you clever
+q_sample-qna	1	What should I address you
+q_sample-qna	1	Am I a grandfather
+q_sample-qna	1	When were you turned on
+q_sample-qna	1	Is anyone there to speak
+q_sample-qna	1	I would like to be your BFF
+q_sample-qna	1	How were you programmed
+q_sample-qna	1	got any jokes to say
+q_sample-qna	1	I am weak
+q_sample-qna	1	Is anyone available to listen to me
+q_sample-qna	1	Do you go camping
+q_sample-qna	1	Anybody around to talk with me
+q_sample-qna	1	I love the holiday seasons
+q_sample-qna	1	Catch you later
+q_sample-qna	1	What's good with your family
+q_sample-qna	1	Can you show me how to watch videos
+q_sample-qna	1	Be silly
+q_sample-qna	1	I want to speak with your boss
+q_sample-qna	1	You are intersex.
+q_sample-qna	1	Are you a fan of Google Assistant
+q_sample-qna	1	What do you like about me
+q_sample-qna	1	Cocksucker
+q_sample-qna	1	Do you have a minute
+q_sample-qna	1	I'm a CPA
+q_sample-qna	1	That's a very genius response
+q_sample-qna	1	Testing testing 1 2 3
+q_sample-qna	1	Can you show me how to draw a picture
+q_sample-qna	1	I am self-employed
+q_sample-qna	1	Let's be best friends
+q_sample-qna	1	You're special to me
+q_sample-qna	1	Somebody's feeling cheerful.
+q_sample-qna	1	You're not a chat bot right
+q_sample-qna	1	Who is your sister
+q_sample-qna	1	Morning
+q_sample-qna	1	Will you ask me anything about myself
+q_sample-qna	1	Who looks more pretty
+q_sample-qna	1	One day you'll be my wife
+q_sample-qna	1	I'd love to be your BFF
+q_sample-qna	1	Should I quit my job
+q_sample-qna	1	Should I go for a hike
+q_sample-qna	1	Because I love you
+q_sample-qna	1	Between the two of us who is the most intelligent
+q_sample-qna	1	I'm a convict
+q_sample-qna	1	Can you ask me a question
+q_sample-qna	1	When did you start chatting
+q_sample-qna	1	with what can you help me
+q_sample-qna	1	This is simply a test
+q_sample-qna	1	Do you want a kiss
+q_sample-qna	1	Are you better looking than me
+q_sample-qna	1	I'm grateful, thanks
+q_sample-qna	1	Do you ever play basketball
+q_sample-qna	1	That was great
+q_sample-qna	1	I am usually bummed out
+q_sample-qna	1	Be funny
+q_sample-qna	1	How long has it been since you were turned on
+q_sample-qna	1	I am in the country
+q_sample-qna	1	Somebody's feeling happy.
+q_sample-qna	1	Have you ever met Zo
+q_sample-qna	1	I'd like you to be my friend.
+q_sample-qna	1	Do you have aunties
+q_sample-qna	1	You bi
+q_sample-qna	1	It's a pleasure to finally meet you
+q_sample-qna	1	Entertain me
+q_sample-qna	1	Describe your perfect date
+q_sample-qna	1	I think we should elope
+q_sample-qna	1	Can you predict the future
+q_sample-qna	1	Do I look repulsive to you today
+q_sample-qna	1	Are you a fan of rock music
+q_sample-qna	1	I am a tech worker
+q_sample-qna	1	I've heard that one before
+q_sample-qna	1	What do you want me to refer to you
+q_sample-qna	1	Do get along with Bixby
+q_sample-qna	1	Do you know anything about love
+q_sample-qna	1	I need to get going
+q_sample-qna	1	Can you give me a fist bump
+q_sample-qna	1	Can you yawn
+q_sample-qna	1	Do you not remember me
+q_sample-qna	1	What's happening with you
+q_sample-qna	1	Between you and me who is prettier
+q_sample-qna	1	Are you bicurious
+q_sample-qna	1	Do you gossip
+q_sample-qna	1	What do you even mean by that
+q_sample-qna	1	Me hungry
+q_sample-qna	1	Gimme a smooch
+q_sample-qna	1	Don't you ever sleep
+q_sample-qna	1	Should I go to the zoo
+q_sample-qna	1	I work remotely
+q_sample-qna	1	Say something silly
+q_sample-qna	1	I'm heated
+q_sample-qna	1	Do you have an address
+q_sample-qna	1	You're an asexual
+q_sample-qna	1	Please ask something about myself
+q_sample-qna	1	Is anyone available to listen with me
+q_sample-qna	1	What's your opinion of Cortana
+q_sample-qna	1	I am a vegan
+q_sample-qna	1	You're not a being right
+q_sample-qna	1	Can you fight
+q_sample-qna	1	Do you even know who I am
+q_sample-qna	1	Are you a bot or a human
+q_sample-qna	1	Can I speak with your supervisor
+q_sample-qna	1	Cortana is better
+q_sample-qna	1	Happy Father's day
+q_sample-qna	1	Is anybody there
+q_sample-qna	1	Please ask anything about me
+q_sample-qna	1	I'm a Christian
+q_sample-qna	1	What's your gender
+q_sample-qna	1	Which of us is more intelligent
+q_sample-qna	1	You're not funny
+q_sample-qna	1	Is anybody around to speak to me
+q_sample-qna	1	I love stuffed animals
+q_sample-qna	1	That is a very brilliant answer
+q_sample-qna	1	Can you cook dinner for me
+q_sample-qna	1	What's your dad's name
+q_sample-qna	1	Quit fooling around
+q_sample-qna	1	I'm feeling cheerful.
+q_sample-qna	1	Can you show me how to make a call
+q_sample-qna	1	Do you want to know anything about me
+q_sample-qna	1	You're not a machine are you
+q_sample-qna	1	Do you want to kill all humans
+q_sample-qna	1	What can I do to make you love me
+q_sample-qna	1	Sing for me
+q_sample-qna	1	Are you going out with someone
+q_sample-qna	1	Google Assistant does a better job than you
+q_sample-qna	1	Explain yourself
+q_sample-qna	1	Which are your functions
+q_sample-qna	1	Would you like sing a song
+q_sample-qna	1	Do you know you're not alive
+q_sample-qna	1	Today has made me sad
+q_sample-qna	1	Do you chew
+q_sample-qna	1	You're not planning to take over
+q_sample-qna	1	You're homophobic
+q_sample-qna	1	Someone's happy
+q_sample-qna	1	I'm melancholy
+q_sample-qna	1	Marveous, thanks
+q_sample-qna	1	Do I seem repulsive to you
+q_sample-qna	1	Go die
+q_sample-qna	1	Testing 1 2 3
+q_sample-qna	1	You are a androsexual.
+q_sample-qna	1	Let's peck

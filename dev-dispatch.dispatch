@@ -1,0 +1,37 @@
+{
+  "authoringRegion": "westus",
+  "hierarchical": true,
+  "useAllTrainingData": false,
+  "dontReviseUtterance": false,
+  "copyLuisData": true,
+  "services": [
+    {
+      "intentName": "l_HomeAutomation",
+      "appId": "e74d7ded-044b-4a28-bc0c-6a1fb6a5725d",
+      "authoringKey": "8723052ec13b44c6b8688318f0452fd7",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "botbuilder-sample",
+      "id": "1"
+    },
+    {
+      "intentName": "q_sample-qna",
+      "kbId": "64d443ef-f86c-49c9-ab37-1cc1d10716cf",
+      "subscriptionKey": "e857fe4e6db44798bb502790fccb97db",
+      "type": "qna",
+      "name": "questx-testKB",
+      "id": "2"
+    }
+  ],
+  "serviceIds": [
+    "1",
+    "2"
+  ],
+  "appId": "305d17aa-743a-456f-8166-419da67b1a53",
+  "authoringKey": "8723052ec13b44c6b8688318f0452fd7",
+  "version": "Dispatch",
+  "region": "westus",
+  "type": "dispatch",
+  "name": "dev-dispatch"
+}
