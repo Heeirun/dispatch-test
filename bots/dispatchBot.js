@@ -9,8 +9,11 @@ class DispatchBot extends ActivityHandler {
     /**
      * @param {any} logger object for logging events, defaults to console if none is provided
      */
-    constructor(logger) {
+    constructor(conversationState, userState, dialog, logger) {
         super();
+        if (!conversationState) throw new Error('[DialogBot]: Missing parameter. conversationState is required');
+        if (!userState) throw new Error('[DialogBot]: Missing parameter. userState is required');
+        if (!dialog) throw new Error('[DialogBot]: Missing parameter. dialog is required');
         if (!logger) {
             logger = console;
             logger.log('[DispatchBot]: logger not passed in, defaulting to console');
@@ -31,7 +34,11 @@ class DispatchBot extends ActivityHandler {
             host: process.env.QnAEndpointHostName
         });
 
+        this.conversationState = conversationState;
+        this.userState = userState;
+        this.dialog = dialog;
         this.logger = logger;
+        this.dialogState = this.conversationState.createProperty('DialogState');
         this.dispatchRecognizer = dispatchRecognizer;
         this.qnaMaker = qnaMaker;
 
@@ -42,6 +49,7 @@ class DispatchBot extends ActivityHandler {
             const recognizerResult = await dispatchRecognizer.recognize(context);
             // Top intent tell us which cognitive service to use.
             const intent = LuisRecognizer.topIntent(recognizerResult);
+            console.log("Intent: " + intent);
             // Next, we call the dispatcher with the top intent.
             await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
 
@@ -61,6 +69,13 @@ class DispatchBot extends ActivityHandler {
             // By calling next() you ensure that the next BotHandler is run.
             await next();
         });
+
+        this.onDialog(async (context, next) => {
+            // Save any state changes. The load happened during the execution of the Dialog.
+            await this.conversationState.saveChanges(context, false);
+            await this.userState.saveChanges(context, false);
+            await next();
+        });
     }
 
     async dispatchToTopIntentAsync(context, intent, recognizerResult) {
@@ -71,6 +86,12 @@ class DispatchBot extends ActivityHandler {
             break;
         case 'q_sample-qna':
             await this.processSampleQnA(context);
+            break;
+        case 'l_CreateTicket':
+            console.log("Intent l_CreateTicket is detected!");
+            // make dialog run here!
+            await this.dialog.run(context, this.dialogState);
+            // await this.sendTicket(context);
             break;
         default:
             this.logger.log(`Dispatch unrecognized intent: ${ intent }.`);
@@ -85,7 +106,6 @@ class DispatchBot extends ActivityHandler {
         // Retrieve LUIS result for Process Automation.
         const result = luisResult.connectedServiceResult;
         const intent = result.topScoringIntent.intent;
-        this.sendTicket().catch(console.error);
         await context.sendActivity(`HomeAutomation top intent ${ intent }.`);
         await context.sendActivity(`HomeAutomation intents detected:  ${ luisResult.intents.map((intentObj) => intentObj.intent).join('\n\n') }.`);
 
@@ -94,7 +114,7 @@ class DispatchBot extends ActivityHandler {
         }
     }
 
-    async sendTicket() {
+    async sendTicket(context) {
         let transporter = nodemailer.createTransport({
             host: process.env.SMTPHost,
             port: process.env.SMTPPort,
@@ -109,21 +129,13 @@ class DispatchBot extends ActivityHandler {
            from: '"IT Support Chat Bot" <hjayakumar@wisc.edu>',
            to: "jayakumarh@schneider.com, jayakumar@schneider.com",
            subject: "Password Reset",
-           text: "I am having issues reseting my password\nPriority: 5\nPrimary Application: N/A"
+           text: "Priority: 5\nPrimary Application: N/A\nI am having issues reseting my password"
         });
 
         console.log("Message sent: %s", info.messageId)
+        await context.sendActivity("Ticket has been created and mailed to IT Support.");
+        await context.sendActivity("Is there anything else that I can help you with?");
     }
-
-    // async processITSupport(context, luisResult) {
-    //     this.logger.log('processITSupport');
-
-    //     //Retrieve LUIS result from ITSupport
-    //     const result = luisResult.connectedServiceResult;
-    //     const intent = result.topScoringIntent.intent;
-
-    //     await context.sendActivity("ITSupport top intent")
-    // }
 
     async processSampleQnA(context) {
         this.logger.log('processSampleQnA');
