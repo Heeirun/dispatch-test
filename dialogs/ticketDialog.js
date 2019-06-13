@@ -10,13 +10,15 @@ const {
     WaterfallDialog
 } = require('botbuilder-dialogs');
 const { TicketProfile } = require('../ticketProfile');
+const nodemailer = require("nodemailer");
 
+const TICKET_PROMPT = 'TICKET_PROMPT';
 const NAME_PROMPT = 'NAME_PROMPT'; //NOTE: if there is Authentication then we do not need to prompt for identity
 const SUBJECT_PROMPT = 'SUBJECT_PROMPT';
 const DESCRIPTION_PROMPT = 'DESCRIPTION_PROMPT';
 const PRIORITY_PROMPT = 'PRIORITY_PROMPT';
 const PRIMARYAPP_PROMPT = 'PRIMARYAPP_PROMPT';
-const SEND_PROMPT = 'SEND_PROMPT';
+const CONFIRM_PROMPT = 'CONFIRM_PROMPT';
 const TICKET_PROFILE = 'TICKET_PROFILE';
 const WATERFALL_DIALOG = 'WATERFALL_DIALOG';
 
@@ -27,17 +29,18 @@ class TicketProfileDialog extends ComponentDialog {
         this.ticketProfile = userState.createProperty(TICKET_PROFILE);
 
         this.logger = logger;
-
+        this.addDialog(new ConfirmPrompt(TICKET_PROMPT));
         this.addDialog(new TextPrompt(NAME_PROMPT));
         this.addDialog(new TextPrompt(SUBJECT_PROMPT));
         this.addDialog(new TextPrompt(DESCRIPTION_PROMPT));
         this.addDialog(new TextPrompt(PRIMARYAPP_PROMPT));
-        this.addDialog(new TextPrompt(PRIORITY_PROMPT));
-        this.addDialog(new TextPrompt(SEND_PROMPT));
+        this.addDialog(new NumberPrompt(PRIORITY_PROMPT, this.agePromptValidator));
+        this.addDialog(new ConfirmPrompt(CONFIRM_PROMPT));
         
         
 
         this.addDialog(new WaterfallDialog(WATERFALL_DIALOG, [
+            this.ticketStep.bind(this),
             this.nameStep.bind(this),
             this.subjectStep.bind(this),
             this.descriptionStep.bind(this),
@@ -59,7 +62,6 @@ class TicketProfileDialog extends ComponentDialog {
     async run(turnContext, accessor) {
         const dialogSet = new DialogSet(accessor);
         dialogSet.add(this);
-
         const dialogContext = await dialogSet.createContext(turnContext);
         const results = await dialogContext.continueDialog();
         if (results.status === DialogTurnStatus.empty) {
@@ -67,9 +69,17 @@ class TicketProfileDialog extends ComponentDialog {
         }
     }
 
+    async ticketStep(step) {
+        return await step.prompt(TICKET_PROMPT, "Would you like to create a support ticket?");
+    }
     async nameStep(step) {
-        await step.context.sendActivity("Lets get started on creating your support ticket.");
-        return await step.prompt(NAME_PROMPT, "What is your name, human?");
+        if (step.result) {
+            await step.context.sendActivity("Lets get started on creating your support ticket.");
+            return await step.prompt(NAME_PROMPT, "What is your name, human?");
+        } else {
+            await step.context.sendActivity("Is there anything else that I can help you with?");
+            return await step.endDialog();
+        }
     }
     async subjectStep(step) {
         step.values.name = step.result;
@@ -85,7 +95,7 @@ class TicketProfileDialog extends ComponentDialog {
     async primaryAppStep(step) {
         step.values.description = step.result;
         await step.context.sendActivity(`Your description has been recorded on the support ticket`);
-        return await step.prompt(PRIMARYAPP_PROMPT, "Can you give me the name of the Primary Application where the isue you are facing is found?");
+        return await step.prompt(PRIMARYAPP_PROMPT, "Can you give me the name of the Primary Application where the issue you are facing is found?");
     }
     async priorityStep(step) {
         step.values.primaryApplication = step.result;
@@ -95,9 +105,9 @@ class TicketProfileDialog extends ComponentDialog {
     }
 
     async showSummaryStep(step) {
-        step.values.priority = step.results;
+        step.values.priority = step.result;
         const ticketProfile = await this.ticketProfile.get(step.context, new TicketProfile());
-
+        console.log('Enter show summary step');
         ticketProfile.name = step.values.name;
         ticketProfile.subject = step.values.subject;
         ticketProfile.description = step.values.description;
@@ -112,12 +122,13 @@ class TicketProfileDialog extends ComponentDialog {
         Priority: ${ticketProfile.priority}`
 
         await step.context.sendActivity(msg);
-        return await step.prompt(SEND_PROMPT, "Do you wish to submit this support ticket?");
+        return await step.prompt(CONFIRM_PROMPT, "Do you wish to submit this support ticket?");
     }
 
     async summaryStep(step) {
+        this.logger.log(step.result);
         if (step.result) {
-            //CALL: function which send out mail
+            this.sendTicket(step.context, step.values.name, step.values.subject, step.values.description, step.values.primaryApplication, step.values.priority).catch(console.error);
             await step.context.sendActivity("Your support ticket has been sent and you will be contacted shortly.");
             await step.context.sendActivity("Is there anything else that I can help you with?");
         } else {
@@ -126,6 +137,29 @@ class TicketProfileDialog extends ComponentDialog {
 
         return await step.endDialog();
     }
+
+    async sendTicket(context, name, title, description, primaryApplication, priority) {
+        let transporter = nodemailer.createTransport({
+            host: process.env.SMTPHost,
+            port: process.env.SMTPPort,
+            secure: false,
+            auth: {
+                user: process.env.SMTPUser,
+                pass: process.env.SMTPPass
+            }
+        });
+
+
+        let info = await transporter.sendMail({
+           from: '"IT Support Chat Bot" <hjayakumar@wisc.edu>',
+           to: "jayakumarh@schneider.com, jayakumar@schneider.com",
+           subject: 'IT Support Chat Bot',
+           html: "<b>Name: " + name + "</br>Priority: " + priority +"</br>Primary Application: " + primaryApplication +"</br>Title: " + title + "</br>Description: " + description + "<b>"
+        });
+
+        console.log("Message sent: %s", info.messageId)
+    }
+
 
     async agePromptValidator(promptContext) {
         // This condition is our validation rule. You can also change the value at this point.

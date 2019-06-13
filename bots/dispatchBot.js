@@ -3,7 +3,7 @@
 
 const { ActivityHandler } = require('botbuilder');
 const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
-const nodemailer = require("nodemailer");
+
 
 class DispatchBot extends ActivityHandler {
     /**
@@ -41,28 +41,43 @@ class DispatchBot extends ActivityHandler {
         this.dialogState = this.conversationState.createProperty('DialogState');
         this.dispatchRecognizer = dispatchRecognizer;
         this.qnaMaker = qnaMaker;
+        this.hardCount = 0;
 
         this.onMessage(async (context, next) => {
             this.logger.log('Processing Message Activity.');
-
+            this.logger.log(context.activity);
             // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
             const recognizerResult = await dispatchRecognizer.recognize(context);
             // Top intent tell us which cognitive service to use.
             const intent = LuisRecognizer.topIntent(recognizerResult);
             console.log("Intent: " + intent);
             // Next, we call the dispatcher with the top intent.
-            await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
 
-            await next();
+            if ( intent == "l_CreateTicket" || this.hardCount < 8 && this.hardCount > 0) {
+                logger.log(this.hardCount);
+                this.hardCount++;
+                await this.dialog.run(context, this.dialogState);
+                await next();
+            } else {
+                logger.log(this.hardCount);
+                this.hardCount = 0;
+                await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
+                await next();
+            }
+
+            // await this.dialog.run(context, this.dialogState);
+            // this.hardCount++;
+            // logger.log(this.hardCount);
+            // await next();
         });
 
         this.onMembersAdded(async (context, next) => {
-            const welcomeText = 'Type a greeting or a question about the weather to get started.';
+            const welcomeText = 'Type a question or request a support ticket to be created to get started.';
             const membersAdded = context.activity.membersAdded;
 
             for (let member of membersAdded) {
                 if (member.id !== context.activity.recipient.id) {
-                    await context.sendActivity(`Welcome to Dispatch bot ${ member.name }. ${ welcomeText }`);
+                    await context.sendActivity(`Welcome to the IT Support Bot. ${ welcomeText }`);
                 }
             }
 
@@ -87,12 +102,6 @@ class DispatchBot extends ActivityHandler {
         case 'q_sample-qna':
             await this.processSampleQnA(context);
             break;
-        case 'l_CreateTicket':
-            console.log("Intent l_CreateTicket is detected!");
-            // make dialog run here!
-            await this.dialog.run(context, this.dialogState);
-            // await this.sendTicket(context);
-            break;
         default:
             this.logger.log(`Dispatch unrecognized intent: ${ intent }.`);
             await context.sendActivity(`Dispatch unrecognized intent: ${ intent }.`);
@@ -112,29 +121,6 @@ class DispatchBot extends ActivityHandler {
         if (luisResult.entities.length > 0) {
             await context.sendActivity(`HomeAutomation entities were found in the message: ${ luisResult.entities.map((entityObj) => entityObj.entity).join('\n\n') }.`);
         }
-    }
-
-    async sendTicket(context) {
-        let transporter = nodemailer.createTransport({
-            host: process.env.SMTPHost,
-            port: process.env.SMTPPort,
-            secure: false,
-            auth: {
-                user: process.env.SMTPUser,
-                pass: process.env.SMTPPass
-            }
-        });
-
-        let info = await transporter.sendMail({
-           from: '"IT Support Chat Bot" <hjayakumar@wisc.edu>',
-           to: "jayakumarh@schneider.com, jayakumar@schneider.com",
-           subject: "Password Reset",
-           text: "Priority: 5\nPrimary Application: N/A\nI am having issues reseting my password"
-        });
-
-        console.log("Message sent: %s", info.messageId)
-        await context.sendActivity("Ticket has been created and mailed to IT Support.");
-        await context.sendActivity("Is there anything else that I can help you with?");
     }
 
     async processSampleQnA(context) {
