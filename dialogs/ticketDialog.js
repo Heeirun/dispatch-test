@@ -1,6 +1,4 @@
 const {
-    ChoiceFactory,
-    ChoicePrompt,
     ComponentDialog,
     ConfirmPrompt,
     DialogSet,

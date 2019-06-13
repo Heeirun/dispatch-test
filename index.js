@@ -11,6 +11,7 @@ const restify = require('restify');
 const { BotFrameworkAdapter, MemoryStorage, ConversationState, UserState } = require('botbuilder');
 const { DispatchBot } = require('./bots/dispatchBot');
 const { TicketProfileDialog } = require('./dialogs/ticketDialog');
+const { RemoveWorkDialog } = require('./dialogs/removeWorkDialog');
 
 // Note: Ensure you have a .env file and include all necessary credentials to access services like LUIS and QnAMaker.
 const ENV_FILE = path.join(__dirname, '.env');
@@ -46,8 +47,9 @@ const userState = new UserState(memoryStorage);
 const logger = console;
 
 // Create the main dialog.
-let dialog = new TicketProfileDialog(userState, logger);
-let bot = new DispatchBot(conversationState, userState, dialog, logger);
+let ticketDialog = new TicketProfileDialog(userState, logger);
+let removeWorkDialog = new RemoveWorkDialog(userState, logger);
+let bot = new DispatchBot(conversationState, userState, ticketDialog, removeWorkDialog, logger);
 
 // Create HTTP server
 let server = restify.createServer();

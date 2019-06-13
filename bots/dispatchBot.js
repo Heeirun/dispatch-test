@@ -3,17 +3,19 @@
 
 const { ActivityHandler } = require('botbuilder');
 const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
+const { CardFactory } = require('botbuilder');
 
 
 class DispatchBot extends ActivityHandler {
     /**
      * @param {any} logger object for logging events, defaults to console if none is provided
      */
-    constructor(conversationState, userState, dialog, logger) {
+    constructor(conversationState, userState, ticketDialog, removeWorkDialog, logger) {
         super();
         if (!conversationState) throw new Error('[DialogBot]: Missing parameter. conversationState is required');
         if (!userState) throw new Error('[DialogBot]: Missing parameter. userState is required');
-        if (!dialog) throw new Error('[DialogBot]: Missing parameter. dialog is required');
+        if (!ticketDialog) throw new Error('[DialogBot]: Missing parameter. dialog is required');
+        if (!removeWorkDialog) throw new Error('[DialogBot]: Missing parameter. dialog is required');
         if (!logger) {
             logger = console;
             logger.log('[DispatchBot]: logger not passed in, defaulting to console');
@@ -36,12 +38,14 @@ class DispatchBot extends ActivityHandler {
 
         this.conversationState = conversationState;
         this.userState = userState;
-        this.dialog = dialog;
+        this.ticketDialog = ticketDialog;
+        this.removeWorkDialog = removeWorkDialog;
         this.logger = logger;
-        this.dialogState = this.conversationState.createProperty('DialogState');
+        this.dialogState = this.conversationState.createProperty('DialogState'); // might need an independant one for removeWorkDialog
         this.dispatchRecognizer = dispatchRecognizer;
         this.qnaMaker = qnaMaker;
-        this.hardCount = 0;
+        this.createTicketCount = 0;
+        this.removeWorkCount = 0;
 
         this.onMessage(async (context, next) => {
             this.logger.log('Processing Message Activity.');
@@ -53,22 +57,31 @@ class DispatchBot extends ActivityHandler {
             console.log("Intent: " + intent);
             // Next, we call the dispatcher with the top intent.
 
-            if ( intent == "l_CreateTicket" || this.hardCount < 8 && this.hardCount > 0) {
-                logger.log(this.hardCount);
-                this.hardCount++;
-                await this.dialog.run(context, this.dialogState);
+            if ( intent == "l_CreateTicket" || this.createTicketCount < 8 && this.createTicketCount > 0) {
+                logger.log(this.createTicketCount);
+                this.createTicketCount++;
+                if (this.createTicketCount == 8) {
+                    this.createTicketCount = 0;
+                }
+                await this.ticketDialog.run(context, this.dialogState);
+                await next();
+            } else if ( intent == "l_RemoveWorkAssignment" || this.removeWorkCount < 5 && this.removeWorkCount > 0){
+                logger.log(this.removeWorkCount);
+                this.removeWorkCount++;
+                if (this.removeWorkCount == 5) {
+                    this.removeWorkCount = 0;
+                }
+                await this.removeWorkDialog.run(context, this.dialogState);
                 await next();
             } else {
-                logger.log(this.hardCount);
-                this.hardCount = 0;
+                logger.log("Create Ticket Count: " + this.createTicketCount);
+                logger.log("Remove Work Count: " + this.removeWorkCount);
+                this.createTicketCount = 0;
+                this.removeWorkCount = 0;
                 await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
+                // await this.processSampleQnA(context);
                 await next();
             }
-
-            // await this.dialog.run(context, this.dialogState);
-            // this.hardCount++;
-            // logger.log(this.hardCount);
-            // await next();
         });
 
         this.onMembersAdded(async (context, next) => {
@@ -129,7 +142,31 @@ class DispatchBot extends ActivityHandler {
         const results = await this.qnaMaker.getAnswers(context);
 
         if (results.length > 0) {
-            await context.sendActivity(`${ results[0].answer }`);
+            const { answer, context: { prompts }} = results[0];
+
+            let reply;
+            if (prompts.length) {
+      
+              const card = {
+                "type": "AdaptiveCard",
+                "body": [
+                    {
+                        "type": "TextBlock",
+                        "text": answer,
+                        wrap: true
+                    }
+                ],
+                "actions": prompts.map(({ displayText }) => ({ type: "Action.Submit", title: displayText, data: displayText })),
+                "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                "version": "1.1"
+              }
+      
+              reply = { attachments: [CardFactory.adaptiveCard(card)] };
+            } else {
+              reply = answer;
+            }
+      
+            await context.sendActivity(reply);        
         } else {
             await context.sendActivity('Sorry, could not find an answer in the Q and A system.');
         }
