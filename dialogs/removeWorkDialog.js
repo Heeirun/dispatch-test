@@ -78,7 +78,6 @@ class RemoveWorkDialog extends ComponentDialog {
 
     async showSummaryStep(step) {
         step.values.assignmentType = step.result.value;
-        this.logger.log(step.values.assignmentType)
         const removeWorkProfile = await this.removeWorkProfile.get(step.context, new RemoveWorkProfile());
         console.log('Enter show summary step');
         removeWorkProfile.shipmentNumber = step.values.shipmentNumber
@@ -93,9 +92,8 @@ class RemoveWorkDialog extends ComponentDialog {
     }
 
     async summaryStep(step) {
-        this.logger.log(step.result);
         if (step.result) {
-            this.sendTicket(step.values.shipmentNumber, step.values.assignmentType.value).catch(console.error);
+            this.sendTicket(step.values.shipmentNumber, step.values.assignmentType).catch(console.error);
             await step.context.sendActivity("Your request has been sent and you will be contacted shortly.");
             await step.context.sendActivity("Is there anything else that I can help you with?");
         } else {
