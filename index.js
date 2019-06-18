@@ -12,9 +12,6 @@ const { BotFrameworkAdapter, MemoryStorage, ConversationState, UserState } = req
 const { DispatchBot } = require('./bots/dispatchBot');
 const { TicketProfileDialog } = require('./dialogs/ticketDialog');
 const { RemoveWorkDialog } = require('./dialogs/removeWorkDialog');
-const appInsights = require("applicationinsights");
-appInsights.setup(process.env.AppInsightsInstrumentationKey);
-appInsights.start();
 
 // Note: Ensure you have a .env file and include all necessary credentials to access services like LUIS and QnAMaker.
 const ENV_FILE = path.join(__dirname, '.env');

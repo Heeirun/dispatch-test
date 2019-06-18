@@ -65,10 +65,10 @@ class DispatchBot extends ActivityHandler {
                 }
                 await this.ticketDialog.run(context, this.dialogState);
                 await next();
-            } else if ( intent == "l_RemoveWorkAssignment" || this.removeWorkCount < 5 && this.removeWorkCount > 0){
+            } else if ( intent == "l_RemoveWorkAssignment" || this.removeWorkCount < 6 && this.removeWorkCount > 0){
                 logger.log(this.removeWorkCount);
                 this.removeWorkCount++;
-                if (this.removeWorkCount == 5) {
+                if (this.removeWorkCount == 6) {
                     this.removeWorkCount = 0;
                 }
                 await this.removeWorkDialog.run(context, this.dialogState);
@@ -85,12 +85,27 @@ class DispatchBot extends ActivityHandler {
         });
 
         this.onMembersAdded(async (context, next) => {
-            const welcomeText = 'Type a question or request a support ticket to be created to get started.';
+            const welcomeText =`Welcome to the IT Support Bot. Choose from the available actions or type a question to get started.`;
             const membersAdded = context.activity.membersAdded;
 
             for (let member of membersAdded) {
                 if (member.id !== context.activity.recipient.id) {
-                    await context.sendActivity(`Welcome to the IT Support Bot. ${ welcomeText }`);
+                    const card = {
+                        "type": "AdaptiveCard",
+                        "body": [
+                            {
+                                "type": "TextBlock",
+                                "text": welcomeText,
+                                wrap: true
+                            }
+                        ],
+                        "actions": [{ type: "Action.Submit", title: "Create Support Ticket", data: "Create Support Ticket"}, { type: "Action.Submit", title: "Remove Work Assignment", data: "Remove Work Assignment"}],
+                        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                        "version": "1.1"
+                      }
+                      this.logger.log(card);
+                      let reply = { attachments: [CardFactory.adaptiveCard(card)] };
+                      await context.sendActivity(reply)
                 }
             }
 
@@ -165,7 +180,6 @@ class DispatchBot extends ActivityHandler {
             } else {
               reply = answer;
             }
-      
             await context.sendActivity(reply);        
         } else {
             await context.sendActivity('Sorry, could not find an answer in the Q and A system.');

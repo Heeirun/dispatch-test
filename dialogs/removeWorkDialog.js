@@ -36,6 +36,7 @@ class RemoveWorkDialog extends ComponentDialog {
 
         this.addDialog(new WaterfallDialog(WATERFALL_DIALOG, [
             this.removeWorkStep.bind(this),
+            this.nameStep.bind(this),
             this.shipmentNumStep.bind(this),
             this.subjectStep.bind(this),
             this.showSummaryStep.bind(this),
@@ -101,6 +102,7 @@ class RemoveWorkDialog extends ComponentDialog {
     }
 
     async summaryStep(step) {
+        this.logger.log("SUMSTEP" + step.result);
         if (step.result) {
             this.sendTicket(step.values.name, step.values.shipmentNumber, step.values.assignmentType).catch(console.error);
             await step.context.sendActivity("Your request has been sent and you will be contacted shortly.");
