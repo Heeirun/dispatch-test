@@ -12,6 +12,7 @@ const { RemoveWorkProfile } = require('../removeWorkProfile');
 const nodemailer = require("nodemailer");
 
 const REMOVE_PROMPT = 'REMOVE_PROMPT';
+const NAME_PROMPT = 'NAME_PROMPT'
 const SHIPMENT_NUMBER_PROMPT ='SHIPMENT_NUMBER_PROMPT';
 const ASSIGNMENT_TYPE_PROMPT = 'ASSIGNMENT_TYPE_PROMPT';
 const CONFIRM_PROMPT = 'CONFIRM_PROMPT';
@@ -26,6 +27,7 @@ class RemoveWorkDialog extends ComponentDialog {
 
         this.logger = logger;
         this.addDialog(new ConfirmPrompt(REMOVE_PROMPT));
+        this.addDialog(new TextPrompt(NAME_PROMPT));
         this.addDialog(new TextPrompt(SHIPMENT_NUMBER_PROMPT));
         this.addDialog(new ChoicePrompt(ASSIGNMENT_TYPE_PROMPT));
         this.addDialog(new ConfirmPrompt(CONFIRM_PROMPT));
@@ -34,7 +36,7 @@ class RemoveWorkDialog extends ComponentDialog {
 
         this.addDialog(new WaterfallDialog(WATERFALL_DIALOG, [
             this.removeWorkStep.bind(this),
-            this.nameStep.bind(this),
+            this.shipmentNumStep.bind(this),
             this.subjectStep.bind(this),
             this.showSummaryStep.bind(this),
             this.summaryStep.bind(this)
@@ -60,11 +62,16 @@ class RemoveWorkDialog extends ComponentDialog {
     async nameStep(step) {
         if (step.result) {
             await step.context.sendActivity("Lets get started on removing your work assignment.");
-            return await step.prompt(SHIPMENT_NUMBER_PROMPT, "What is your shipment number?");
+            return await step.prompt(NAME_PROMPT, "What is your name?");
         } else {
             await step.context.sendActivity("Is there anything else that I can help you with?");
             return await step.endDialog();
         }
+    }
+    async shipmentNumStep(step) {
+        step.values.name = step.result;
+        await step.context.sendActivity(`Thanks ${step.result}.`);
+        return await step.prompt(SHIPMENT_NUMBER_PROMPT, "What is your shipment number?");
     }
 
     async subjectStep(step) {
@@ -80,12 +87,14 @@ class RemoveWorkDialog extends ComponentDialog {
         step.values.assignmentType = step.result.value;
         const removeWorkProfile = await this.removeWorkProfile.get(step.context, new RemoveWorkProfile());
         console.log('Enter show summary step');
-        removeWorkProfile.shipmentNumber = step.values.shipmentNumber
-        removeWorkProfile.assignmentType = step.values.assignmentType
+        removeWorkProfile.requestName = step.values.name;
+        removeWorkProfile.shipmentNumber = step.values.shipmentNumber;
+        removeWorkProfile.assignmentType = step.values.assignmentType;
 
         let msg = `Your ticket is as follows:\n
+        Name: ${removeWorkProfile.requestName}\n
         Shipment Number: ${removeWorkProfile.shipmentNumber}\n
-        Assignment Type: ${removeWorkProfile.assignmentType}`
+        Assignment Type: ${removeWorkProfile.assignmentType}`;
 
         await step.context.sendActivity(msg);
         return await step.prompt(CONFIRM_PROMPT, "Do you wish to submit this request?");
@@ -93,7 +102,7 @@ class RemoveWorkDialog extends ComponentDialog {
 
     async summaryStep(step) {
         if (step.result) {
-            this.sendTicket(step.values.shipmentNumber, step.values.assignmentType).catch(console.error);
+            this.sendTicket(step.values.name, step.values.shipmentNumber, step.values.assignmentType).catch(console.error);
             await step.context.sendActivity("Your request has been sent and you will be contacted shortly.");
             await step.context.sendActivity("Is there anything else that I can help you with?");
         } else {
@@ -103,7 +112,7 @@ class RemoveWorkDialog extends ComponentDialog {
         return await step.endDialog();
     }
 
-    async sendTicket(shipmentNumber, assignmentType) {
+    async sendTicket(name, shipmentNumber, assignmentType) {
         let transporter = nodemailer.createTransport({
             host: process.env.SMTPHost,
             port: process.env.SMTPPort,
@@ -117,7 +126,7 @@ class RemoveWorkDialog extends ComponentDialog {
            from: '"IT Support Chat Bot" <hjayakumar@wisc.edu>',
            to: "jayakumarh@schneider.com, jayakumar@schneider.com",
            subject: 'IT Support Chat Bot',
-           html: "<b>Shipment Number: " + shipmentNumber + "</br>Assignment Type: " + assignmentType + "<b>"
+           html: "<b>Name: " + name + "</br>Shipment Number: " + shipmentNumber + "</br>Assignment Type: " + assignmentType + "<b>"
         });
 
         console.log("Message sent: %s", info.messageId)

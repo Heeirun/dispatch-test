@@ -1,7 +1,8 @@
 class RemoveWorkProfile {
-    constructor(shipmentNumber, assignmentType, driverNumber, truckNumber, currentLocation, dateTime, currentFirmware) {
+    constructor(shipmentNumber, assignmentType, requestName, driverNumber, truckNumber, currentLocation, dateTime, currentFirmware) {
         this.shipmentNumber = shipmentNumber;
-        this.assignmentType = assignmentType
+        this.assignmentType = assignmentType;
+        this.requestName = requestName;
         this.driverNumber = driverNumber;
         this.truckNumber = truckNumber;
         this.currentLocation = currentLocation;
