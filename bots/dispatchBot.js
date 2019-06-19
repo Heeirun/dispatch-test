@@ -90,22 +90,7 @@ class DispatchBot extends ActivityHandler {
 
             for (let member of membersAdded) {
                 if (member.id !== context.activity.recipient.id) {
-                    const card = {
-                        "type": "AdaptiveCard",
-                        "body": [
-                            {
-                                "type": "TextBlock",
-                                "text": welcomeText,
-                                wrap: true
-                            }
-                        ],
-                        "actions": [{ type: "Action.Submit", title: "Create Support Ticket", data: "Create Support Ticket"}, { type: "Action.Submit", title: "Remove Work Assignment", data: "Remove Work Assignment"}],
-                        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-                        "version": "1.1"
-                      }
-                      this.logger.log(card);
-                      let reply = { attachments: [CardFactory.adaptiveCard(card)] };
-                      await context.sendActivity(reply)
+                    await this.sendCard(context, welcomeText);
                 }
             }
 
@@ -121,6 +106,24 @@ class DispatchBot extends ActivityHandler {
         });
     }
 
+    async sendCard(context, inputText = "") {
+        const card = {
+            "type": "AdaptiveCard",
+            "body": [
+                {
+                    "type": "TextBlock",
+                    "text": inputText,
+                    wrap: true
+                }
+            ],
+            "actions": [{ type: "Action.Submit", title: "Create Support Ticket", data: "Create Support Ticket"}, { type: "Action.Submit", title: "Remove Work Assignment", data: "Remove Work Assignment"}, { type: "Action.Submit", title: "Ask a Question", data: "Ask a Question"}],
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "version": "1.1"
+          }
+          this.logger.log(card);
+          let reply = { attachments: [CardFactory.adaptiveCard(card)] };
+          await context.sendActivity(reply)
+    }
     async dispatchToTopIntentAsync(context, intent, recognizerResult) {
         this.logger.log("Enters dispatchToTopIntentAsync");
         switch (intent) {
@@ -177,10 +180,14 @@ class DispatchBot extends ActivityHandler {
               }
       
               reply = { attachments: [CardFactory.adaptiveCard(card)] };
+              await context.sendActivity(reply); 
+
             } else {
               reply = answer;
+              let cardText = "Is there anything else that I can help you with? Ask a question or choose from the actions below.";
+              await context.sendActivity(reply);
+              await this.sendCard(context, cardText); 
             }
-            await context.sendActivity(reply);        
         } else {
             await context.sendActivity('Sorry, could not find an answer in the Q and A system.');
         }

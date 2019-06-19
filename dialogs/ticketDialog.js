@@ -9,6 +9,8 @@ const {
 } = require('botbuilder-dialogs');
 const { TicketProfile } = require('../ticketProfile');
 const nodemailer = require("nodemailer");
+const { CardFactory } = require('botbuilder');
+
 
 const TICKET_PROMPT = 'TICKET_PROMPT';
 const NAME_PROMPT = 'NAME_PROMPT'; //NOTE: if there is Authentication then we do not need to prompt for identity
@@ -128,14 +130,33 @@ class TicketProfileDialog extends ComponentDialog {
         if (step.result) {
             this.sendTicket(step.context, step.values.name, step.values.subject, step.values.description, step.values.primaryApplication, step.values.priority).catch(console.error);
             await step.context.sendActivity("Your support ticket has been sent and you will be contacted shortly.");
-            await step.context.sendActivity("Is there anything else that I can help you with?");
+            await step.context.sendActivity("Is there anything else that I can help you with? Ask a question or choose from the actions below.");
+            await this.sendCard(step.context);
         } else {
-            await step.context.sendActivity("Thanks you profile will not be kept");
+            await step.context.sendActivity("You request has been canceled.");
+            await step.context.sendActivity("Is there anything else that I can help you with? Ask a question or choose from the actions below.");
+            await this.sendCard(step.context);
         }
-
         return await step.endDialog();
     }
-
+    async sendCard(context, inputText = "") {
+        const card = {
+            "type": "AdaptiveCard",
+            "body": [
+                {
+                    "type": "TextBlock",
+                    "text": inputText,
+                    wrap: true
+                }
+            ],
+            "actions": [{ type: "Action.Submit", title: "Create Support Ticket", data: "Create Support Ticket"}, { type: "Action.Submit", title: "Remove Work Assignment", data: "Remove Work Assignment"}, { type: "Action.Submit", title: "Ask a Question", data: "Ask a Question"}],
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "version": "1.1"
+          }
+          this.logger.log(card);
+          let reply = { attachments: [CardFactory.adaptiveCard(card)] };
+          await context.sendActivity(reply)
+    }
     async sendTicket(context, name, title, description, primaryApplication, priority) {
         let transporter = nodemailer.createTransport({
             host: process.env.SMTPHost,

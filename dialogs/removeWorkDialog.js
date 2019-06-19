@@ -10,6 +10,8 @@ const {
 } = require('botbuilder-dialogs');
 const { RemoveWorkProfile } = require('../removeWorkProfile');
 const nodemailer = require("nodemailer");
+const { CardFactory } = require('botbuilder');
+
 
 const REMOVE_PROMPT = 'REMOVE_PROMPT';
 const NAME_PROMPT = 'NAME_PROMPT'
@@ -80,7 +82,7 @@ class RemoveWorkDialog extends ComponentDialog {
         await step.context.sendActivity(`Your shipment number is: ${step.result}.`);
         return await step.prompt(ASSIGNMENT_TYPE_PROMPT, {
             prompt: "What assignment type is this work assignment?",
-            choices: ChoiceFactory.toChoices(['Active assignment', 'Current Assignment'])
+            choices: ChoiceFactory.toChoices(['Active Assignment', 'Pre-Assignment'])
         });
     }
 
@@ -106,12 +108,33 @@ class RemoveWorkDialog extends ComponentDialog {
         if (step.result) {
             this.sendTicket(step.values.name, step.values.shipmentNumber, step.values.assignmentType).catch(console.error);
             await step.context.sendActivity("Your request has been sent and you will be contacted shortly.");
-            await step.context.sendActivity("Is there anything else that I can help you with?");
+            await step.context.sendActivity("Is there anything else that I can help you with? Ask a question or choose from the actions below.");
+            await this.sendCard(step.context);
         } else {
             await step.context.sendActivity("You request has been canceled.");
-            await step.context.sendActivity("Is there anything else that I can help you with?");
+            await step.context.sendActivity("Is there anything else that I can help you with? Ask a question or choose from the actions below.");
+            await this.sendCard(step.context);
         }
         return await step.endDialog();
+    }
+
+    async sendCard(context, inputText = "") {
+        const card = {
+            "type": "AdaptiveCard",
+            "body": [
+                {
+                    "type": "TextBlock",
+                    "text": inputText,
+                    wrap: true
+                }
+            ],
+            "actions": [{ type: "Action.Submit", title: "Create Support Ticket", data: "Create Support Ticket"}, { type: "Action.Submit", title: "Remove Work Assignment", data: "Remove Work Assignment"}, { type: "Action.Submit", title: "Ask a Question", data: "Ask a Question"}],
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "version": "1.1"
+          }
+          this.logger.log(card);
+          let reply = { attachments: [CardFactory.adaptiveCard(card)] };
+          await context.sendActivity(reply)
     }
 
     async sendTicket(name, shipmentNumber, assignmentType) {
