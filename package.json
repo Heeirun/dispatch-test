@@ -19,7 +19,7 @@
         "applicationinsights": "^1.4.0",
         "botbuilder": "~4.4.0",
         "botbuilder-ai": "~4.4.0",
-        "botbuilder-azure": "~4.4.0",
+        "botbuilder-azure": "~4.18.0",
         "botbuilder-dialogs": "^4.4.0",
         "dotenv": "^6.1.0",
         "nodemailer": "^6.2.1",
